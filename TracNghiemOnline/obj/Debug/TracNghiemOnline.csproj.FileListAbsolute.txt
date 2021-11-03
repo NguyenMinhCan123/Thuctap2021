@@ -1,0 +1,917 @@
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CoreCompileInputs.cache
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+e:\VIEN CNTT\PROGRAMMING\2019\10-Source thi trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CoreCompileInputs.cache
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+e:\PROJECTS\2019\10-Source Trac nghiem\trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CoreCompileInputs.cache
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+E:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+e:\GitHub\2019-frontend\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CoreCompileInputs.cache
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+G:\Project\Anh Tuan\Trac nghiem\Source code\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojResolveAssemblyReference.cache
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+F:\2019\Anh tuan\trac-nghiem-online-edit\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.IO.FileSystem.Primitives.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\System.IO.Packaging.dll
+E:\2019\Tuan\Trac nghiem\code\Project 03-Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.Packaging.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+E:\Trac nghiem\code\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.FileSystem.Primitives.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.Packaging.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\tracnghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.Packaging.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+E:\Trac nghiem\soucreclone\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\ApplicationInsights.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\TracNghiemOnline.pdb
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.exe.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csc.rsp
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.exe.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\csi.rsp
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.AppContext.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Console.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Compression.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.IO.Pipes.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Claims.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.ValueTuple.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.exe.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\vbc.rsp
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.ApplicationInsights.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.FileSystem.Primitives.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.IO.Packaging.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\WebGrease.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\DocumentFormat.OpenXml.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\EntityFramework.SqlServer.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Helpers.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Mvc.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Optimization.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.Razor.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Deployment.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Web.WebPages.Razor.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Newtonsoft.Json.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Antlr3.Runtime.pdb
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.AI.Web.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csprojAssemblyReference.cache
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.csproj.CopyComplete
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.dll
+E:\Trac nghiem\THUC-TAP\Trac-nghiem-online\TracNghiemOnline\obj\Debug\TracNghiemOnline.pdb
