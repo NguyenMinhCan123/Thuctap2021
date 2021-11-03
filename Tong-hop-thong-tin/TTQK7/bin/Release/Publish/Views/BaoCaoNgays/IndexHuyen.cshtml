@@ -1,0 +1,651 @@
+﻿@model IEnumerable<TTQK7.BaoCaoTongHopHuyen_Result>
+
+@{
+    ViewBag.Title = "Báo cáo ngày";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Báo cáo ngày</h2>
+<div class="table-responsive">
+    <table id="InboxList" class="table table-bordered table-striped table-hover action-table" border="1">
+        <thead>
+            <tr>
+                <th class="tg-0pky" colspan="3" rowspan="2">Ngày tháng  năm</th>
+                <th class="tg-0pky" colspan="6" rowspan="2">TBBĐ (A1)</th>
+                <th class="tg-0pky" colspan="4" rowspan="2">ĐƠN BIÊN (A2)</th>
+                <th class="tg-0pky" colspan="13">SÓNG NGẮN (A3)</th>
+                <th class="tg-0pky" colspan="4" rowspan="2">SCN (A4)</th>
+                <th class="tg-0pky" colspan="3" rowspan="2">VIBA (A6)</th>
+                <th class="tg-0pky" colspan="11" rowspan="2">HTĐ (B2 + B3)</th>
+                <th class="tg-0pky" colspan="19">QUÂN BƯU</th>
+                <th class="tg-0pky" rowspan="4">Ghi chú</th>
+            </tr>
+            <tr>
+                <td class="tg-0pky" colspan="4">BTTM</td>
+                <td class="tg-0pky" colspan="7">Nội bộ</td>
+                <td class="tg-0pky" colspan="2">Hiệp đồng</td>
+                <td class="tg-0pky" rowspan="2">47</td>
+                <td class="tg-0pky" colspan="3">Hỏa tốc</td>
+                <td class="tg-0pky" colspan="3">Công văn</td>
+                <td class="tg-0pky" colspan="3">Văn kiện</td>
+                <td class="tg-0pky" colspan="3">Thư báo</td>
+                <td class="tg-0pky" colspan="6">Phương tiện</td>
+
+
+            </tr>
+            <tr>
+                <td class="tg-0pky" rowspan="2">TT</td>
+                <td class="tg-0pky" rowspan="2">Đơn vị</td>
+                <td class="tg-0pky" rowspan="2">Người trực</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">4</td>
+                <td class="tg-0pky">5</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">8</td>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">11</td>
+                <td class="tg-0pky">12</td>
+                <td class="tg-0pky">13</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">15</td>
+                <td class="tg-0pky">16</td>
+                <td class="tg-0pky">17</td>
+                <td class="tg-0pky">18</td>
+                <td class="tg-0pky">19</td>
+                <td class="tg-0pky">20</td>
+                <td class="tg-0pky">21</td>
+                <td class="tg-0pky">22</td>
+                <td class="tg-0pky">23</td>
+                <td class="tg-0pky">24</td>
+                <td class="tg-0pky">25</td>
+                <td class="tg-0pky">26</td>
+                <td class="tg-0pky">27</td>
+                <td class="tg-0pky">31</td>
+                <td class="tg-0pky">32</td>
+                <td class="tg-0pky">33</td>
+                <td class="tg-0pky">36</td>
+                <td class="tg-0pky">37</td>
+                <td class="tg-0pky">38</td>
+                <td class="tg-0pky">39</td>
+                <td class="tg-0pky">40</td>
+                <td class="tg-0pky">41</td>
+                <td class="tg-0pky">42</td>
+                <td class="tg-0pky">43</td>
+                <td class="tg-0pky">44</td>
+                <td class="tg-0pky">45</td>
+                <td class="tg-0pky">46</td>
+                <td class="tg-0pky">48</td>
+                <td class="tg-0pky">49</td>
+                <td class="tg-0pky">50</td>
+                <td class="tg-0pky">51</td>
+                <td class="tg-0pky">52</td>
+                <td class="tg-0pky">53</td>
+                <td class="tg-0pky">54</td>
+                <td class="tg-0pky">55</td>
+                <td class="tg-0pky">56</td>
+                <td class="tg-0pky">57</td>
+                <td class="tg-0pky">58</td>
+                <td class="tg-0pky">59</td>
+                <td class="tg-0pky">60</td>
+                <td class="tg-0pky">61</td>
+                <td class="tg-0pky">62</td>
+                <td class="tg-0pky">63</td>
+                <td class="tg-0pky">64</td>
+                <td class="tg-0pky">65</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">Canh BTTM/đứt</td>
+                <td class="tg-0pky">Canh QK/đứt</td>
+                <td class="tg-0pky">Lần phát chuẩn</td>
+                <td class="tg-0pky">Thu t/hiệu Bộ</td>
+                <td class="tg-0pky">Thu t/hiệu QK</td>
+                <td class="tg-0pky">QK phát t/hiệu</td>
+                <td class="tg-0pky">Số đ/tượng</td>
+                <td class="tg-0pky">T.số phiên/đứt</td>
+                <td class="tg-0pky">Số phiên CT/đứt</td>
+                <td class="tg-0pky">Điện S/R</td>
+                <td class="tg-0pky">T.số phiên/đứt</td>
+                <td class="tg-0pky">Gọi canh/đứt</td>
+                <td class="tg-0pky">Trả lời canh/đứt</td>
+                <td class="tg-0pky">Điện S/R</td>
+                <td class="tg-0pky">Số đ/tượng</td>
+                <td class="tg-0pky">T.số phiên/đứt</td>
+                <td class="tg-0pky">Số phiên CT/đứt</td>
+                <td class="tg-0pky">Trả lời canh.đứt</td>
+                <td class="tg-0pky">Gọi canh/đứt</td>
+                <td class="tg-0pky">Điện S/R</td>
+                <td class="tg-0pky">Điện đọng</td>
+                <td class="tg-0pky">Trả lời canh/đứt</td>
+                <td class="tg-0pky">Điện S/R</td>
+                <td class="tg-0pky">Số đ/tượng</td>
+                <td class="tg-0pky">T.số phiên/đứt</td>
+                <td class="tg-0pky">Số phiên CT/đứt</td>
+                <td class="tg-0pky">Điện S/R</td>
+                <td class="tg-0pky">Số đ/tượng</td>
+                <td class="tg-0pky">Giờ/phát liên lạc</td>
+                <td class="tg-0pky">Giờ/phát đứt</td>
+                <td class="tg-0pky">Số đ/tượng</td>
+                <td class="tg-0pky">Lần chuyển tiếp</td>
+                <td class="tg-0pky">Số lần đứt</td>
+                <td class="tg-0pky">Dây tiêu hao</td>
+                <td class="tg-0pky">Giờ/phút liên lạc</td>
+                <td class="tg-0pky">Máy dùng</td>
+                <td class="tg-0pky">Máy sửa</td>
+                <td class="tg-0pky">Máy đọng</td>
+                <td class="tg-0pky">Đặt máy mới</td>
+                <td class="tg-0pky">T.số Tr.kế/đứt</td>
+                <td class="tg-0pky">T.số Tr.kế NB/đứt</td>
+                <td class="tg-0pky">T.vận hành/đứt</td>
+                <td class="tg-0pky">Về</td>
+                <td class="tg-0pky">Đi</td>
+                <td class="tg-0pky">Đọng</td>
+                <td class="tg-0pky">Về</td>
+                <td class="tg-0pky">Đi</td>
+                <td class="tg-0pky">Đọng</td>
+                <td class="tg-0pky">Về</td>
+                <td class="tg-0pky">Đi</td>
+                <td class="tg-0pky">Đọng</td>
+                <td class="tg-0pky">Về</td>
+                <td class="tg-0pky">Đi</td>
+                <td class="tg-0pky">Đọng</td>
+                <td class="tg-0pky">Xe đạp</td>
+                <td class="tg-0pky">Mô tô</td>
+                <td class="tg-0pky">Ô tô</td>
+                <td class="tg-0pky">Số chuyến</td>
+                <td class="tg-0pky">Trọng lượng</td>
+                <td class="tg-0pky">Cự ly</td>
+
+            </tr>
+
+
+        </thead>
+        @{
+            var Stt = 1; }
+        @foreach (var item in Model)
+        {
+            <body>
+                <tr>
+
+                    <td>@Stt</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenDonVi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NguoiBaoCao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_CanhBTTM)/
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_CanhBTTM_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_CanhQK)/
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_CanhQK_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_Lanphatchuan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_ThuTinHieuBo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_ThuTinHieuQK)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TBBD_A1_QKPhatTinHieu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_SoDoiTuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_TongSoPhien)/
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_TongSoPhien_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_SoPhienCT)/
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_SoPhienCT_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_DienS)/
+                        @Html.DisplayFor(modelItem => item.DonBien_A2_DienT)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_TongSoPhien)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_TongSoPhien_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_GoiCanh)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_GoiCanh_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_TraLoiCanh)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_BTTM_A3_TraLoiCanh_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_DienS)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_DienR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_SoDoiTuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_TongSoPhien)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_TongSoPhien_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_SoPhienCT)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_SoPhienCT_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_TraLoiCanh)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_TraLoiCanh_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_GoiCanh)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_GoiCanh_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_DienS)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_DienR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_NoiBo_A3_DienDong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_TraLoiCanh)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_TraLoiCanh_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_DienS)/
+                        @Html.DisplayFor(modelItem => item.SongNgan_HiepDong_A3_DienR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SCN_A4_SoDoiTuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SCN_A4_TongSoPhien)/
+                        @Html.DisplayFor(modelItem => item.SCN_A4_TongSoPhien_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SCN_A4_SoPhienCT)/
+                        @Html.DisplayFor(modelItem => item.SCN_A4_SoPhienCT_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SCN_A4_DienS)/
+                        @Html.DisplayFor(modelItem => item.SCN_A4_DienR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ViBa_A6_SoDoiTuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ViBa_A6_GioLienLac)/
+                        @Html.DisplayFor(modelItem => item.ViBa_A6_GioPhatLienLac)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ViBa_A6_GioPhat)/
+                        @Html.DisplayFor(modelItem => item.ViBa_A6_GioPhat_Dut)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HDT_B2_SoDoiTuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HDT_B2_LanChuyenTiep)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HDT_B2_SoLanDut)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HDT_B2_DayTieuHao)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HDT_B2_GioLienLac)/
+                        @Html.DisplayFor(modelItem => item.HDT_B2_PhutLienLac)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_MayDung)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_MaySua)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_MayDong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_DatMayMoi)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_TongSoTrKe)/
+                        @Html.DisplayFor(modelItem => item.HTD_B3_TongSoTrKe_Dut)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HTD_B3_TongSoTrKeNB)/
+                        @Html.DisplayFor(modelItem => item.HTD_B3_TongSoTrKeNB_Dut)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_47_B4_TongVanHanh)/
+                        @Html.DisplayFor(modelItem => item.QuanBuu_47_B4_TongVanHanh_Dut)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_HoaToc_B4_Ve)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_HoaToc_B4_Di)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_HoaToc_B4_Dong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_CongVan_B4_Ve)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_CongVan_B4_Di)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_CongVan_B4_Dong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_VanKien_B4_Ve)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_VanKien_B4_Di)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_VanKien_B4_Dong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_ThuBao_B4_Ve)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_ThuBao_B4_Di)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuanBuu_ThuBao_B4_Dong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.XeDap)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MoTo)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OTo)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoChuyen)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TrongLuong)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CuLy)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tonghopghichu)
+
+                    </td>
+
+                </tr>
+
+
+            </body>
+            Stt++;
+        }
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+                @ViewBag.a1_1_1/@ViewBag.a1_1_2
+            </td>
+            <td>
+                @ViewBag.a1_2_1/@ViewBag.a1_2_2
+            </td>
+            <td>
+                @ViewBag.a1_3
+            <td>
+                @ViewBag.a1_4
+            </td>
+            <td>
+                @ViewBag.a1_5
+            </td>
+            <td>
+                @ViewBag.a1_6
+            </td>
+            <td>
+                @ViewBag.a2_7
+
+            </td>
+            <td>
+                @ViewBag.a2_8_1/@ViewBag.a2_8_2
+            </td>
+            <td>
+                @ViewBag.a2_9_1/@ViewBag.a2_9_2
+            </td>
+            <td>
+                @ViewBag.a2_10_1/@ViewBag.a2_10_2
+            </td>
+            <td>
+                @ViewBag.a3_11_1/@ViewBag.a3_11_2
+            </td>
+            <td>
+                @ViewBag.a3_12_1/@ViewBag.a3_12_2
+            </td>
+            <td>
+                @ViewBag.a3_13_1/@ViewBag.a3_13_2
+            </td>
+            <td>
+                @ViewBag.a3_14_1/@ViewBag.a3_14_2
+            </td>
+            <td>
+                @ViewBag.a3_15
+            </td>
+            <td>
+                @ViewBag.a3_16_1/@ViewBag.a3_16_2
+            </td>
+            <td>
+                @ViewBag.a3_17_1/@ViewBag.a3_17_2
+            </td>
+            <td>
+                @ViewBag.a3_18_1/@ViewBag.a3_18_2
+            </td>
+            <td>
+                @ViewBag.a3_19_1/@ViewBag.a3_19_2
+            </td>
+            <td>
+                @ViewBag.a3_20_1/@ViewBag.a3_20_2
+            </td>
+            <td>
+                @ViewBag.a3_21
+            </td>
+            <td>
+                @ViewBag.a3_22_1/@ViewBag.a3_22_2
+            </td>
+            <td>
+                @ViewBag.a3_21/@ViewBag.a3_23_2
+            </td>
+            <td>
+                @ViewBag.a4_24
+            </td>
+            <td>
+                @ViewBag.a4_25_1/@ViewBag.a4_25_2
+            </td>
+            <td>
+                @ViewBag.a4_26_1/@ViewBag.a4_26_2
+            </td>
+            <td>
+                @ViewBag.a4_27_1/@ViewBag.a4_27_2
+            </td>
+            <td>
+                @ViewBag.a6_31
+            </td>
+            <td>
+                @ViewBag.a6_32_1/@ViewBag.a6_32_2
+            </td>
+            <td>
+                @ViewBag.a6_33_1/@ViewBag.a6_33_2
+            </td>
+            <td>
+                @ViewBag.b2_36
+            </td>
+            <td>
+                @ViewBag.b2_37
+            </td>
+            <td>
+                @ViewBag.b2_38
+            </td>
+            <td>
+                @ViewBag.b2_39
+            </td>
+            <td>
+                @ViewBag.b2_40_1/ @ViewBag.b2_40_2
+            </td>
+            <td>
+                @ViewBag.b2_41
+            </td>
+            <td>
+                @ViewBag.b3_42
+            </td>
+            <td>
+                @ViewBag.b3_43
+            </td>
+            <td>
+                @ViewBag.b3_44
+            </td>
+            <td>
+                @ViewBag.b3_45_1/ @ViewBag.b3_45_2
+            </td>
+            <td>
+                @ViewBag.b3_46_1/ @ViewBag.b3_46_2
+            </td>
+            <td>
+                @ViewBag.b4_47_1/ @ViewBag.b4_47_2
+            </td>
+            <td>
+                @ViewBag.b4_48
+            </td>
+            <td>
+                @ViewBag.b4_49
+            </td>
+            <td>
+                @ViewBag.b4_50
+            </td>
+            <td>
+                @ViewBag.b4_51
+            </td>
+            <td>
+                @ViewBag.b4_52
+            </td>
+            <td>
+                @ViewBag.b4_53
+            </td>
+            <td>
+                @ViewBag.b4_54
+            </td>
+            <td>
+                @ViewBag.b4_55
+            </td>
+            <td>
+                @ViewBag.b4_56
+            </td>
+            <td>
+                @ViewBag.b4_57
+            </td>
+            <td>
+                @ViewBag.b4_58
+            </td>
+            <td>
+                @ViewBag.b4_59
+            </td>
+            <td>
+                @ViewBag.b4_60
+            </td>
+            <td>
+                @ViewBag.b4_61
+            </td>
+            <td>
+                @ViewBag.b4_62
+            </td>
+            <td>
+                @ViewBag.b4_63
+            </td>
+            <td>
+                @ViewBag.b4_64
+            </td>
+            <td>
+                @ViewBag.b4_65
+            </td>
+            <td>
+                @ViewBag.b4_66
+            </td>
+        </tr>
+
+    </table>
+</div>
+    @section Styles{
+        @Styles.Render("~/vendors/DataTables/css")
+        @Styles.Render("~/vendors/DataTables/Buttons/css")
+    }
+    @section scripts{
+        @Scripts.Render("~/vendors/DataTables/js")
+        @Scripts.Render("~/vendors/DataTables/Buttons/js")
+        <!--modal form-->
+        @Scripts.Render("~/bundles/modalform")
+
+        <script language="javascript">
+        $(document).ready(function () {
+            var t = $('#InboxList').DataTable({
+                "language": {
+                    "url": "/vendors/DataTables/langs/Vietnamese.json"
+                },
+            });
+            t.on('order.dt search.dt', function () {
+                t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }).draw();
+        });
+        $('#InboxList tr').dblclick(function () {
+            var id = $(this).attr('id');
+            id = id.replace('tblMail_', '');
+            var url = '@Url.Action("Edit", "tblUser", new { id = "js-id"})'
+              .replace("js-id", encodeURIComponent(id));
+            document.location = url;
+
+        })
+        </script>
+    }

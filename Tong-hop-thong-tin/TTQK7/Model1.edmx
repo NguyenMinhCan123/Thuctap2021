@@ -1,0 +1,2786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TTQK7Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BaoCaoNgay">
+          <Key>
+            <PropertyRef Name="BaoCaoID" />
+          </Key>
+          <Property Name="BaoCaoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NguoiBaoCao" Type="nvarchar" MaxLength="200" />
+          <Property Name="NgayBaoCao" Type="datetime" />
+          <Property Name="DonViID" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsGui" Type="bit" />
+          <Property Name="TrucBanTruong" Type="nvarchar" MaxLength="100" />
+          <Property Name="TrucBanPho" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DonBien_A2">
+          <Key>
+            <PropertyRef Name="A2_ID" />
+          </Key>
+          <Property Name="A2_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoDoiTuong" Type="int" />
+          <Property Name="TongSoPhien" Type="int" />
+          <Property Name="TongSoPhien_Dut" Type="int" />
+          <Property Name="SoPhienCT" Type="int" />
+          <Property Name="SoPhienCT_Dut" Type="int" />
+          <Property Name="DienS" Type="int" />
+          <Property Name="DienT" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="HDT_B2">
+          <Key>
+            <PropertyRef Name="B2_ID" />
+          </Key>
+          <Property Name="B2_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoDoiTuong" Type="int" />
+          <Property Name="LanChuyenTiep" Type="int" />
+          <Property Name="SoLanDut" Type="int" />
+          <Property Name="DayTieuHao" Type="int" />
+          <Property Name="GioLienLac" Type="int" />
+          <Property Name="PhutLienLac" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="HTD_B3">
+          <Key>
+            <PropertyRef Name="B3_ID" />
+          </Key>
+          <Property Name="B3_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MayDung" Type="int" />
+          <Property Name="MaySua" Type="int" />
+          <Property Name="MayDong" Type="int" />
+          <Property Name="DatMayMoi" Type="int" />
+          <Property Name="TongSoTrKe" Type="int" />
+          <Property Name="TongSoTrKe_Dut" Type="int" />
+          <Property Name="TongSoTrKeNB" Type="int" />
+          <Property Name="TongSoTrKeNB_Dut" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_47_B4">
+          <Key>
+            <PropertyRef Name="B4_47_ID" />
+          </Key>
+          <Property Name="B4_47_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TongVanHanh" Type="int" />
+          <Property Name="TongVanHanh_Dut" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_CongVan_B4">
+          <Key>
+            <PropertyRef Name="B4_CongVan_ID" />
+          </Key>
+          <Property Name="B4_CongVan_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ve" Type="int" />
+          <Property Name="Di" Type="int" />
+          <Property Name="Dong" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_HoaToc_B4">
+          <Key>
+            <PropertyRef Name="B4_HoaToc_ID" />
+          </Key>
+          <Property Name="B4_HoaToc_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ve" Type="int" />
+          <Property Name="Di" Type="int" />
+          <Property Name="Dong" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_PhuongTien_B4">
+          <Key>
+            <PropertyRef Name="B4_PhuongTien_ID" />
+          </Key>
+          <Property Name="B4_PhuongTien_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="XeDap" Type="int" />
+          <Property Name="MoTo" Type="int" />
+          <Property Name="OTo" Type="int" />
+          <Property Name="SoChuyen" Type="int" />
+          <Property Name="TrongLuong" Type="float" />
+          <Property Name="CuLy" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_ThuBao_B4">
+          <Key>
+            <PropertyRef Name="B4_ThuBao_ID" />
+          </Key>
+          <Property Name="B4_ThuBao_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ve" Type="float" />
+          <Property Name="Di" Type="float" />
+          <Property Name="Dong" Type="float" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="QuanBuu_VanKien_B4">
+          <Key>
+            <PropertyRef Name="B4_VanKien_ID" />
+          </Key>
+          <Property Name="B4_VanKien_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ve" Type="float" />
+          <Property Name="Di" Type="float" />
+          <Property Name="Dong" Type="float" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="SCN_A4">
+          <Key>
+            <PropertyRef Name="A4_ID" />
+          </Key>
+          <Property Name="A4_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoDoiTuong" Type="int" />
+          <Property Name="TongSoPhien" Type="int" />
+          <Property Name="TongSoPhien_Dut" Type="int" />
+          <Property Name="SoPhienCT" Type="int" />
+          <Property Name="SoPhienCT_Dut" Type="int" />
+          <Property Name="DienS" Type="int" />
+          <Property Name="DienR" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="SongNgan_BTTM_A3">
+          <Key>
+            <PropertyRef Name="A3_BTTM_ID" />
+          </Key>
+          <Property Name="A3_BTTM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TongSoPhien" Type="int" />
+          <Property Name="TongSoPhien_Dut" Type="int" />
+          <Property Name="GoiCanh" Type="int" />
+          <Property Name="GoiCanh_Dut" Type="int" />
+          <Property Name="TraLoiCanh" Type="int" />
+          <Property Name="TraLoiCanh_Dut" Type="int" />
+          <Property Name="DienS" Type="int" />
+          <Property Name="DienR" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="SongNgan_HiepDong_A3">
+          <Key>
+            <PropertyRef Name="A3_HiepDong_ID" />
+          </Key>
+          <Property Name="A3_HiepDong_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TraLoiCanh" Type="int" />
+          <Property Name="TraLoiCanh_Dut" Type="int" />
+          <Property Name="DienS" Type="int" />
+          <Property Name="DienR" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="SongNgan_NoiBo_A3">
+          <Key>
+            <PropertyRef Name="A3_NoiBo_ID" />
+          </Key>
+          <Property Name="A3_NoiBo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoDoiTuong" Type="int" />
+          <Property Name="TongSoPhien" Type="int" />
+          <Property Name="TongSoPhien_Dut" Type="int" />
+          <Property Name="SoPhienCT" Type="int" />
+          <Property Name="SoPhienCT_Dut" Type="int" />
+          <Property Name="TraLoiCanh" Type="int" />
+          <Property Name="TraLoiCanh_Dut" Type="int" />
+          <Property Name="GoiCanh" Type="int" />
+          <Property Name="GoiCanh_Dut" Type="int" />
+          <Property Name="DienS" Type="int" />
+          <Property Name="DienR" Type="int" />
+          <Property Name="DienDong" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="TBBD_A1">
+          <Key>
+            <PropertyRef Name="A1_ID" />
+          </Key>
+          <Property Name="A1_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CanhBTTM" Type="int" />
+          <Property Name="CanhBTTM_Dut" Type="int" />
+          <Property Name="CanhQK" Type="int" />
+          <Property Name="CanhQK_Dut" Type="int" />
+          <Property Name="Lanphatchuan" Type="int" />
+          <Property Name="ThuTinHieuBo" Type="int" />
+          <Property Name="ThuTinHieuQK" Type="int" />
+          <Property Name="QKPhatTinHieu" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblChucVu">
+          <Key>
+            <PropertyRef Name="idChucVu" />
+          </Key>
+          <Property Name="idChucVu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenChucVu" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tblDonVi">
+          <Key>
+            <PropertyRef Name="DonViID" />
+          </Key>
+          <Property Name="DonViID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenDonVi" Type="nvarchar" MaxLength="200" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="IsLast" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblMail">
+          <Key>
+            <PropertyRef Name="idMail" />
+          </Key>
+          <Property Name="idMail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ngay" Type="smalldatetime" />
+          <Property Name="TieuDe" Type="nvarchar(max)" />
+          <Property Name="NoiDung" Type="nvarchar(max)" />
+          <Property Name="idUser" Type="int" />
+        </EntityType>
+        <EntityType Name="tblMailFile">
+          <Key>
+            <PropertyRef Name="idFile" />
+          </Key>
+          <Property Name="idFile" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idMail" Type="int" />
+          <Property Name="TenFile" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tblMailUser">
+          <Key>
+            <PropertyRef Name="idMailUser" />
+          </Key>
+          <Property Name="idMailUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idMail" Type="int" />
+          <Property Name="idUser" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="TraLoi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="tblUploadFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameFile" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="DonViID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="idDonVi" Type="int" />
+          <Property Name="idChucVu" Type="int" />
+        </EntityType>
+        <EntityType Name="TrucBan">
+          <Key>
+            <PropertyRef Name="TrucBanID" />
+          </Key>
+          <Property Name="TrucBanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TrucBanTruong" Type="nvarchar" MaxLength="200" />
+          <Property Name="TrucBanPho" Type="nvarchar" MaxLength="200" />
+          <Property Name="NgayTruc" Type="datetime" />
+          <Property Name="DonViID" Type="int" />
+        </EntityType>
+        <EntityType Name="ViBa_A6">
+          <Key>
+            <PropertyRef Name="A6_ID" />
+          </Key>
+          <Property Name="A6_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoDoiTuong" Type="int" />
+          <Property Name="GioLienLac" Type="int" />
+          <Property Name="GioPhatLienLac" Type="int" />
+          <Property Name="GioPhat" Type="int" />
+          <Property Name="GioPhat_Dut" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+          <Property Name="BaoCaoID" Type="int" />
+        </EntityType>
+        <Association Name="FK_DonBien_A2_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="DonBien_A2" Type="Self.DonBien_A2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="DonBien_A2">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HDT_B2_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="HDT_B2" Type="Self.HDT_B2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="HDT_B2">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HTD_B3_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="HTD_B3" Type="Self.HTD_B3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="HTD_B3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_47_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_47_B4" Type="Self.QuanBuu_47_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_47_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_CongVan_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_CongVan_B4" Type="Self.QuanBuu_CongVan_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_CongVan_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_HoaToc_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_HoaToc_B4" Type="Self.QuanBuu_HoaToc_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_HoaToc_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_PhuongTien_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_PhuongTien_B4" Type="Self.QuanBuu_PhuongTien_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_PhuongTien_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_ThuBao_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_ThuBao_B4" Type="Self.QuanBuu_ThuBao_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_ThuBao_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_VanKien_B4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="QuanBuu_VanKien_B4" Type="Self.QuanBuu_VanKien_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_VanKien_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SCN_A4_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="SCN_A4" Type="Self.SCN_A4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SCN_A4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_BTTM_A3_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="SongNgan_BTTM_A3" Type="Self.SongNgan_BTTM_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_BTTM_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_HiepDong_A3_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="SongNgan_HiepDong_A3" Type="Self.SongNgan_HiepDong_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_HiepDong_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_NoiBo_A3_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="SongNgan_NoiBo_A3" Type="Self.SongNgan_NoiBo_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_NoiBo_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBBD_A1_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="TBBD_A1" Type="Self.TBBD_A1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="TBBD_A1">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMail_tblUser">
+          <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+          <End Role="tblMail" Type="Self.tblMail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="tblMail">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailFile_tblMail">
+          <End Role="tblMail" Type="Self.tblMail" Multiplicity="0..1" />
+          <End Role="tblMailFile" Type="Self.tblMailFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMail">
+              <PropertyRef Name="idMail" />
+            </Principal>
+            <Dependent Role="tblMailFile">
+              <PropertyRef Name="idMail" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailUser_tblMail">
+          <End Role="tblMail" Type="Self.tblMail" Multiplicity="0..1" />
+          <End Role="tblMailUser" Type="Self.tblMailUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMail">
+              <PropertyRef Name="idMail" />
+            </Principal>
+            <Dependent Role="tblMailUser">
+              <PropertyRef Name="idMail" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailUser_tblUser">
+          <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+          <End Role="tblMailUser" Type="Self.tblMailUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="tblMailUser">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUploadFile_tblDonVi">
+          <End Role="tblDonVi" Type="Self.tblDonVi" Multiplicity="0..1" />
+          <End Role="tblUploadFile" Type="Self.tblUploadFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDonVi">
+              <PropertyRef Name="DonViID" />
+            </Principal>
+            <Dependent Role="tblUploadFile">
+              <PropertyRef Name="DonViID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUser_tblChucVu">
+          <End Role="tblChucVu" Type="Self.tblChucVu" Multiplicity="0..1" />
+          <End Role="tblUser" Type="Self.tblUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblChucVu">
+              <PropertyRef Name="idChucVu" />
+            </Principal>
+            <Dependent Role="tblUser">
+              <PropertyRef Name="idChucVu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUser_tblDonVi">
+          <End Role="tblDonVi" Type="Self.tblDonVi" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblUser" Type="Self.tblUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDonVi">
+              <PropertyRef Name="DonViID" />
+            </Principal>
+            <Dependent Role="tblUser">
+              <PropertyRef Name="idDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ViBa_A6_BaoCaoNgay">
+          <End Role="BaoCaoNgay" Type="Self.BaoCaoNgay" Multiplicity="0..1" />
+          <End Role="ViBa_A6" Type="Self.ViBa_A6" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="ViBa_A6">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="BaoCaoTongHop" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ngay" Type="int" Mode="In" />
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaoCaoTongHopHuyen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dvid" Type="int" Mode="In" />
+          <Parameter Name="ngay" Type="int" Mode="In" />
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Get_DSNguoiNhan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idMail" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Get_ListMailInbox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idUser" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Get_ListMailSent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idUser" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Lay_DSNguoiNhan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)">
+          <Parameter Name="idMail" Type="int" Mode="In" />
+        </Function>
+        <Function Name="p_BaoCaoTongHop_View" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ngay" Type="int" Mode="In" />
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_Thanh_BaoCaoThang" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_Thanh_BaoCaoThang_DonVi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+          <Parameter Name="idDonVi" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="TTQK7ModelStoreContainer">
+          <EntitySet Name="BaoCaoNgay" EntityType="Self.BaoCaoNgay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DonBien_A2" EntityType="Self.DonBien_A2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HDT_B2" EntityType="Self.HDT_B2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HTD_B3" EntityType="Self.HTD_B3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_47_B4" EntityType="Self.QuanBuu_47_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_CongVan_B4" EntityType="Self.QuanBuu_CongVan_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_HoaToc_B4" EntityType="Self.QuanBuu_HoaToc_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_PhuongTien_B4" EntityType="Self.QuanBuu_PhuongTien_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_ThuBao_B4" EntityType="Self.QuanBuu_ThuBao_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanBuu_VanKien_B4" EntityType="Self.QuanBuu_VanKien_B4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SCN_A4" EntityType="Self.SCN_A4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SongNgan_BTTM_A3" EntityType="Self.SongNgan_BTTM_A3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SongNgan_HiepDong_A3" EntityType="Self.SongNgan_HiepDong_A3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SongNgan_NoiBo_A3" EntityType="Self.SongNgan_NoiBo_A3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBBD_A1" EntityType="Self.TBBD_A1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblChucVu" EntityType="Self.tblChucVu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblDonVi" EntityType="Self.tblDonVi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMail" EntityType="Self.tblMail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMailFile" EntityType="Self.tblMailFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMailUser" EntityType="Self.tblMailUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUploadFile" EntityType="Self.tblUploadFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TrucBan" EntityType="Self.TrucBan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ViBa_A6" EntityType="Self.ViBa_A6" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DonBien_A2_BaoCaoNgay" Association="Self.FK_DonBien_A2_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="DonBien_A2" EntitySet="DonBien_A2" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HDT_B2_BaoCaoNgay" Association="Self.FK_HDT_B2_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="HDT_B2" EntitySet="HDT_B2" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HTD_B3_BaoCaoNgay" Association="Self.FK_HTD_B3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="HTD_B3" EntitySet="HTD_B3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_47_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_47_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_47_B4" EntitySet="QuanBuu_47_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_CongVan_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_CongVan_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_CongVan_B4" EntitySet="QuanBuu_CongVan_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_HoaToc_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_HoaToc_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_HoaToc_B4" EntitySet="QuanBuu_HoaToc_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_PhuongTien_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_PhuongTien_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_PhuongTien_B4" EntitySet="QuanBuu_PhuongTien_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_ThuBao_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_ThuBao_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_ThuBao_B4" EntitySet="QuanBuu_ThuBao_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_VanKien_B4_BaoCaoNgay" Association="Self.FK_QuanBuu_VanKien_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_VanKien_B4" EntitySet="QuanBuu_VanKien_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SCN_A4_BaoCaoNgay" Association="Self.FK_SCN_A4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SCN_A4" EntitySet="SCN_A4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_BTTM_A3_BaoCaoNgay" Association="Self.FK_SongNgan_BTTM_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_BTTM_A3" EntitySet="SongNgan_BTTM_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_HiepDong_A3_BaoCaoNgay" Association="Self.FK_SongNgan_HiepDong_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_HiepDong_A3" EntitySet="SongNgan_HiepDong_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_NoiBo_A3_BaoCaoNgay" Association="Self.FK_SongNgan_NoiBo_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_NoiBo_A3" EntitySet="SongNgan_NoiBo_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBBD_A1_BaoCaoNgay" Association="Self.FK_TBBD_A1_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="TBBD_A1" EntitySet="TBBD_A1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMail_tblUser" Association="Self.FK_tblMail_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblMail" EntitySet="tblMail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailFile_tblMail" Association="Self.FK_tblMailFile_tblMail">
+            <End Role="tblMail" EntitySet="tblMail" />
+            <End Role="tblMailFile" EntitySet="tblMailFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailUser_tblMail" Association="Self.FK_tblMailUser_tblMail">
+            <End Role="tblMail" EntitySet="tblMail" />
+            <End Role="tblMailUser" EntitySet="tblMailUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailUser_tblUser" Association="Self.FK_tblMailUser_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblMailUser" EntitySet="tblMailUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUploadFile_tblDonVi" Association="Self.FK_tblUploadFile_tblDonVi">
+            <End Role="tblDonVi" EntitySet="tblDonVi" />
+            <End Role="tblUploadFile" EntitySet="tblUploadFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUser_tblChucVu" Association="Self.FK_tblUser_tblChucVu">
+            <End Role="tblChucVu" EntitySet="tblChucVu" />
+            <End Role="tblUser" EntitySet="tblUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUser_tblDonVi" Association="Self.FK_tblUser_tblDonVi">
+            <End Role="tblDonVi" EntitySet="tblDonVi" />
+            <End Role="tblUser" EntitySet="tblUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ViBa_A6_BaoCaoNgay" Association="Self.FK_ViBa_A6_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="ViBa_A6" EntitySet="ViBa_A6" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TTQK7Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TTQK7Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BaoCaoNgay" EntityType="TTQK7Model.BaoCaoNgay" />
+          <EntitySet Name="DonBien_A2" EntityType="TTQK7Model.DonBien_A2" />
+          <EntitySet Name="HDT_B2" EntityType="TTQK7Model.HDT_B2" />
+          <EntitySet Name="HTD_B3" EntityType="TTQK7Model.HTD_B3" />
+          <EntitySet Name="QuanBuu_47_B4" EntityType="TTQK7Model.QuanBuu_47_B4" />
+          <EntitySet Name="QuanBuu_CongVan_B4" EntityType="TTQK7Model.QuanBuu_CongVan_B4" />
+          <EntitySet Name="QuanBuu_HoaToc_B4" EntityType="TTQK7Model.QuanBuu_HoaToc_B4" />
+          <EntitySet Name="QuanBuu_PhuongTien_B4" EntityType="TTQK7Model.QuanBuu_PhuongTien_B4" />
+          <EntitySet Name="QuanBuu_ThuBao_B4" EntityType="TTQK7Model.QuanBuu_ThuBao_B4" />
+          <EntitySet Name="QuanBuu_VanKien_B4" EntityType="TTQK7Model.QuanBuu_VanKien_B4" />
+          <EntitySet Name="SCN_A4" EntityType="TTQK7Model.SCN_A4" />
+          <EntitySet Name="SongNgan_BTTM_A3" EntityType="TTQK7Model.SongNgan_BTTM_A3" />
+          <EntitySet Name="SongNgan_HiepDong_A3" EntityType="TTQK7Model.SongNgan_HiepDong_A3" />
+          <EntitySet Name="SongNgan_NoiBo_A3" EntityType="TTQK7Model.SongNgan_NoiBo_A3" />
+          <EntitySet Name="TBBD_A1" EntityType="TTQK7Model.TBBD_A1" />
+          <EntitySet Name="tblChucVu" EntityType="TTQK7Model.tblChucVu" />
+          <EntitySet Name="tblDonVi" EntityType="TTQK7Model.tblDonVi" />
+          <EntitySet Name="tblMail" EntityType="TTQK7Model.tblMail" />
+          <EntitySet Name="tblMailFile" EntityType="TTQK7Model.tblMailFile" />
+          <EntitySet Name="tblMailUser" EntityType="TTQK7Model.tblMailUser" />
+          <EntitySet Name="tblUser" EntityType="TTQK7Model.tblUser" />
+          <EntitySet Name="TrucBan" EntityType="TTQK7Model.TrucBan" />
+          <EntitySet Name="ViBa_A6" EntityType="TTQK7Model.ViBa_A6" />
+          <AssociationSet Name="FK_DonBien_A2_BaoCaoNgay" Association="TTQK7Model.FK_DonBien_A2_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="DonBien_A2" EntitySet="DonBien_A2" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HDT_B2_BaoCaoNgay" Association="TTQK7Model.FK_HDT_B2_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="HDT_B2" EntitySet="HDT_B2" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HTD_B3_BaoCaoNgay" Association="TTQK7Model.FK_HTD_B3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="HTD_B3" EntitySet="HTD_B3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_47_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_47_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_47_B4" EntitySet="QuanBuu_47_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_CongVan_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_CongVan_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_CongVan_B4" EntitySet="QuanBuu_CongVan_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_HoaToc_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_HoaToc_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_HoaToc_B4" EntitySet="QuanBuu_HoaToc_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_PhuongTien_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_PhuongTien_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_PhuongTien_B4" EntitySet="QuanBuu_PhuongTien_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_ThuBao_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_ThuBao_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_ThuBao_B4" EntitySet="QuanBuu_ThuBao_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_QuanBuu_VanKien_B4_BaoCaoNgay" Association="TTQK7Model.FK_QuanBuu_VanKien_B4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="QuanBuu_VanKien_B4" EntitySet="QuanBuu_VanKien_B4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SCN_A4_BaoCaoNgay" Association="TTQK7Model.FK_SCN_A4_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SCN_A4" EntitySet="SCN_A4" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_BTTM_A3_BaoCaoNgay" Association="TTQK7Model.FK_SongNgan_BTTM_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_BTTM_A3" EntitySet="SongNgan_BTTM_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_HiepDong_A3_BaoCaoNgay" Association="TTQK7Model.FK_SongNgan_HiepDong_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_HiepDong_A3" EntitySet="SongNgan_HiepDong_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongNgan_NoiBo_A3_BaoCaoNgay" Association="TTQK7Model.FK_SongNgan_NoiBo_A3_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="SongNgan_NoiBo_A3" EntitySet="SongNgan_NoiBo_A3" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBBD_A1_BaoCaoNgay" Association="TTQK7Model.FK_TBBD_A1_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="TBBD_A1" EntitySet="TBBD_A1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ViBa_A6_BaoCaoNgay" Association="TTQK7Model.FK_ViBa_A6_BaoCaoNgay">
+            <End Role="BaoCaoNgay" EntitySet="BaoCaoNgay" />
+            <End Role="ViBa_A6" EntitySet="ViBa_A6" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUser_tblChucVu" Association="TTQK7Model.FK_tblUser_tblChucVu">
+            <End Role="tblChucVu" EntitySet="tblChucVu" />
+            <End Role="tblUser" EntitySet="tblUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUser_tblDonVi" Association="TTQK7Model.FK_tblUser_tblDonVi">
+            <End Role="tblDonVi" EntitySet="tblDonVi" />
+            <End Role="tblUser" EntitySet="tblUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMail_tblUser" Association="TTQK7Model.FK_tblMail_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblMail" EntitySet="tblMail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailFile_tblMail" Association="TTQK7Model.FK_tblMailFile_tblMail">
+            <End Role="tblMail" EntitySet="tblMail" />
+            <End Role="tblMailFile" EntitySet="tblMailFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailUser_tblMail" Association="TTQK7Model.FK_tblMailUser_tblMail">
+            <End Role="tblMail" EntitySet="tblMail" />
+            <End Role="tblMailUser" EntitySet="tblMailUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMailUser_tblUser" Association="TTQK7Model.FK_tblMailUser_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblMailUser" EntitySet="tblMailUser" />
+          </AssociationSet>
+          <FunctionImport Name="BaoCaoTongHop" ReturnType="Collection(TTQK7Model.BaoCaoTongHop_Result)">
+            <Parameter Name="ngay" Mode="In" Type="Int32" />
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaoCaoTongHopHuyen" ReturnType="Collection(TTQK7Model.BaoCaoTongHopHuyen_Result)">
+            <Parameter Name="dvid" Mode="In" Type="Int32" />
+            <Parameter Name="ngay" Mode="In" Type="Int32" />
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Get_DSNguoiNhan" ReturnType="Collection(String)">
+          <Parameter Name="idMail" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Get_ListMailInbox" ReturnType="Collection(TTQK7Model.Get_ListMailInbox_Result)">
+          <Parameter Name="idUser" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Get_ListMailSent" ReturnType="Collection(TTQK7Model.Get_ListMailSent_Result)">
+          <Parameter Name="idUser" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="p_BaoCaoTongHop_View" ReturnType="Collection(TTQK7Model.p_BaoCaoTongHop_View_Result)">
+            <Parameter Name="ngay" Mode="In" Type="Int32" />
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="tblUploadFile" EntityType="TTQK7Model.tblUploadFile" />
+          <AssociationSet Name="FK_tblUploadFile_tblDonVi" Association="TTQK7Model.FK_tblUploadFile_tblDonVi">
+            <End Role="tblDonVi" EntitySet="tblDonVi" />
+            <End Role="tblUploadFile" EntitySet="tblUploadFile" />
+          </AssociationSet>
+          <FunctionImport Name="sp_Thanh_BaoCaoThang" ReturnType="Collection(TTQK7Model.sp_Thanh_BaoCaoThang_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Thanh_BaoCaoThang_DonVi" ReturnType="Collection(TTQK7Model.sp_Thanh_BaoCaoThang_DonVi_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+            <Parameter Name="idDonVi" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="BaoCaoNgay">
+          <Key>
+            <PropertyRef Name="BaoCaoID" />
+          </Key>
+          <Property Name="BaoCaoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NguoiBaoCao" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="NgayBaoCao" Type="DateTime" Precision="3" />
+          <Property Name="DonViID" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsGui" Type="Boolean" />
+          <Property Name="TrucBanTruong" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TrucBanPho" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DonBien_A2" Relationship="TTQK7Model.FK_DonBien_A2_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="DonBien_A2" />
+          <NavigationProperty Name="HDT_B2" Relationship="TTQK7Model.FK_HDT_B2_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="HDT_B2" />
+          <NavigationProperty Name="HTD_B3" Relationship="TTQK7Model.FK_HTD_B3_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="HTD_B3" />
+          <NavigationProperty Name="QuanBuu_47_B4" Relationship="TTQK7Model.FK_QuanBuu_47_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_47_B4" />
+          <NavigationProperty Name="QuanBuu_CongVan_B4" Relationship="TTQK7Model.FK_QuanBuu_CongVan_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_CongVan_B4" />
+          <NavigationProperty Name="QuanBuu_HoaToc_B4" Relationship="TTQK7Model.FK_QuanBuu_HoaToc_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_HoaToc_B4" />
+          <NavigationProperty Name="QuanBuu_PhuongTien_B4" Relationship="TTQK7Model.FK_QuanBuu_PhuongTien_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_PhuongTien_B4" />
+          <NavigationProperty Name="QuanBuu_ThuBao_B4" Relationship="TTQK7Model.FK_QuanBuu_ThuBao_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_ThuBao_B4" />
+          <NavigationProperty Name="QuanBuu_VanKien_B4" Relationship="TTQK7Model.FK_QuanBuu_VanKien_B4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="QuanBuu_VanKien_B4" />
+          <NavigationProperty Name="SCN_A4" Relationship="TTQK7Model.FK_SCN_A4_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="SCN_A4" />
+          <NavigationProperty Name="SongNgan_BTTM_A3" Relationship="TTQK7Model.FK_SongNgan_BTTM_A3_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="SongNgan_BTTM_A3" />
+          <NavigationProperty Name="SongNgan_HiepDong_A3" Relationship="TTQK7Model.FK_SongNgan_HiepDong_A3_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="SongNgan_HiepDong_A3" />
+          <NavigationProperty Name="SongNgan_NoiBo_A3" Relationship="TTQK7Model.FK_SongNgan_NoiBo_A3_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="SongNgan_NoiBo_A3" />
+          <NavigationProperty Name="TBBD_A1" Relationship="TTQK7Model.FK_TBBD_A1_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="TBBD_A1" />
+          <NavigationProperty Name="ViBa_A6" Relationship="TTQK7Model.FK_ViBa_A6_BaoCaoNgay" FromRole="BaoCaoNgay" ToRole="ViBa_A6" />
+        </EntityType>
+        <EntityType Name="DonBien_A2">
+          <Key>
+            <PropertyRef Name="A2_ID" />
+          </Key>
+          <Property Name="A2_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoDoiTuong" Type="Int32" />
+          <Property Name="TongSoPhien" Type="Int32" />
+          <Property Name="TongSoPhien_Dut" Type="Int32" />
+          <Property Name="SoPhienCT" Type="Int32" />
+          <Property Name="SoPhienCT_Dut" Type="Int32" />
+          <Property Name="DienS" Type="Int32" />
+          <Property Name="DienT" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_DonBien_A2_BaoCaoNgay" FromRole="DonBien_A2" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="HDT_B2">
+          <Key>
+            <PropertyRef Name="B2_ID" />
+          </Key>
+          <Property Name="B2_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoDoiTuong" Type="Int32" />
+          <Property Name="LanChuyenTiep" Type="Int32" />
+          <Property Name="SoLanDut" Type="Int32" />
+          <Property Name="DayTieuHao" Type="Int32" />
+          <Property Name="GioLienLac" Type="Int32" />
+          <Property Name="PhutLienLac" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_HDT_B2_BaoCaoNgay" FromRole="HDT_B2" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="HTD_B3">
+          <Key>
+            <PropertyRef Name="B3_ID" />
+          </Key>
+          <Property Name="B3_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MayDung" Type="Int32" />
+          <Property Name="MaySua" Type="Int32" />
+          <Property Name="MayDong" Type="Int32" />
+          <Property Name="DatMayMoi" Type="Int32" />
+          <Property Name="TongSoTrKe" Type="Int32" />
+          <Property Name="TongSoTrKe_Dut" Type="Int32" />
+          <Property Name="TongSoTrKeNB" Type="Int32" />
+          <Property Name="TongSoTrKeNB_Dut" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_HTD_B3_BaoCaoNgay" FromRole="HTD_B3" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_47_B4">
+          <Key>
+            <PropertyRef Name="B4_47_ID" />
+          </Key>
+          <Property Name="B4_47_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TongVanHanh" Type="Int32" />
+          <Property Name="TongVanHanh_Dut" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_47_B4_BaoCaoNgay" FromRole="QuanBuu_47_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_CongVan_B4">
+          <Key>
+            <PropertyRef Name="B4_CongVan_ID" />
+          </Key>
+          <Property Name="B4_CongVan_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ve" Type="Int32" />
+          <Property Name="Di" Type="Int32" />
+          <Property Name="Dong" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_CongVan_B4_BaoCaoNgay" FromRole="QuanBuu_CongVan_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_HoaToc_B4">
+          <Key>
+            <PropertyRef Name="B4_HoaToc_ID" />
+          </Key>
+          <Property Name="B4_HoaToc_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ve" Type="Int32" />
+          <Property Name="Di" Type="Int32" />
+          <Property Name="Dong" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_HoaToc_B4_BaoCaoNgay" FromRole="QuanBuu_HoaToc_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_PhuongTien_B4">
+          <Key>
+            <PropertyRef Name="B4_PhuongTien_ID" />
+          </Key>
+          <Property Name="B4_PhuongTien_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="XeDap" Type="Int32" />
+          <Property Name="MoTo" Type="Int32" />
+          <Property Name="OTo" Type="Int32" />
+          <Property Name="SoChuyen" Type="Int32" />
+          <Property Name="TrongLuong" Type="Double" />
+          <Property Name="CuLy" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_PhuongTien_B4_BaoCaoNgay" FromRole="QuanBuu_PhuongTien_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_ThuBao_B4">
+          <Key>
+            <PropertyRef Name="B4_ThuBao_ID" />
+          </Key>
+          <Property Name="B4_ThuBao_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ve" Type="Double" />
+          <Property Name="Di" Type="Double" />
+          <Property Name="Dong" Type="Double" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_ThuBao_B4_BaoCaoNgay" FromRole="QuanBuu_ThuBao_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="QuanBuu_VanKien_B4">
+          <Key>
+            <PropertyRef Name="B4_VanKien_ID" />
+          </Key>
+          <Property Name="B4_VanKien_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ve" Type="Double" />
+          <Property Name="Di" Type="Double" />
+          <Property Name="Dong" Type="Double" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_QuanBuu_VanKien_B4_BaoCaoNgay" FromRole="QuanBuu_VanKien_B4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="SCN_A4">
+          <Key>
+            <PropertyRef Name="A4_ID" />
+          </Key>
+          <Property Name="A4_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoDoiTuong" Type="Int32" />
+          <Property Name="TongSoPhien" Type="Int32" />
+          <Property Name="TongSoPhien_Dut" Type="Int32" />
+          <Property Name="SoPhienCT" Type="Int32" />
+          <Property Name="SoPhienCT_Dut" Type="Int32" />
+          <Property Name="DienS" Type="Int32" />
+          <Property Name="DienR" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_SCN_A4_BaoCaoNgay" FromRole="SCN_A4" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="SongNgan_BTTM_A3">
+          <Key>
+            <PropertyRef Name="A3_BTTM_ID" />
+          </Key>
+          <Property Name="A3_BTTM_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TongSoPhien" Type="Int32" />
+          <Property Name="TongSoPhien_Dut" Type="Int32" />
+          <Property Name="GoiCanh" Type="Int32" />
+          <Property Name="GoiCanh_Dut" Type="Int32" />
+          <Property Name="TraLoiCanh" Type="Int32" />
+          <Property Name="TraLoiCanh_Dut" Type="Int32" />
+          <Property Name="DienS" Type="Int32" />
+          <Property Name="DienR" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_SongNgan_BTTM_A3_BaoCaoNgay" FromRole="SongNgan_BTTM_A3" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="SongNgan_HiepDong_A3">
+          <Key>
+            <PropertyRef Name="A3_HiepDong_ID" />
+          </Key>
+          <Property Name="A3_HiepDong_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TraLoiCanh" Type="Int32" />
+          <Property Name="TraLoiCanh_Dut" Type="Int32" />
+          <Property Name="DienS" Type="Int32" />
+          <Property Name="DienR" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_SongNgan_HiepDong_A3_BaoCaoNgay" FromRole="SongNgan_HiepDong_A3" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="SongNgan_NoiBo_A3">
+          <Key>
+            <PropertyRef Name="A3_NoiBo_ID" />
+          </Key>
+          <Property Name="A3_NoiBo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoDoiTuong" Type="Int32" />
+          <Property Name="TongSoPhien" Type="Int32" />
+          <Property Name="TongSoPhien_Dut" Type="Int32" />
+          <Property Name="SoPhienCT" Type="Int32" />
+          <Property Name="SoPhienCT_Dut" Type="Int32" />
+          <Property Name="TraLoiCanh" Type="Int32" />
+          <Property Name="TraLoiCanh_Dut" Type="Int32" />
+          <Property Name="GoiCanh" Type="Int32" />
+          <Property Name="GoiCanh_Dut" Type="Int32" />
+          <Property Name="DienS" Type="Int32" />
+          <Property Name="DienR" Type="Int32" />
+          <Property Name="DienDong" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_SongNgan_NoiBo_A3_BaoCaoNgay" FromRole="SongNgan_NoiBo_A3" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="TBBD_A1">
+          <Key>
+            <PropertyRef Name="A1_ID" />
+          </Key>
+          <Property Name="A1_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CanhBTTM" Type="Int32" />
+          <Property Name="CanhBTTM_Dut" Type="Int32" />
+          <Property Name="CanhQK" Type="Int32" />
+          <Property Name="CanhQK_Dut" Type="Int32" />
+          <Property Name="Lanphatchuan" Type="Int32" />
+          <Property Name="ThuTinHieuBo" Type="Int32" />
+          <Property Name="ThuTinHieuQK" Type="Int32" />
+          <Property Name="QKPhatTinHieu" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_TBBD_A1_BaoCaoNgay" FromRole="TBBD_A1" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <EntityType Name="tblChucVu">
+          <Key>
+            <PropertyRef Name="idChucVu" />
+          </Key>
+          <Property Name="idChucVu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenChucVu" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblUser" Relationship="TTQK7Model.FK_tblUser_tblChucVu" FromRole="tblChucVu" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblDonVi">
+          <Key>
+            <PropertyRef Name="DonViID" />
+          </Key>
+          <Property Name="DonViID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenDonVi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="IsLast" Type="Boolean" />
+          <NavigationProperty Name="tblUser" Relationship="TTQK7Model.FK_tblUser_tblDonVi" FromRole="tblDonVi" ToRole="tblUser" />
+          <NavigationProperty Name="tblUploadFile" Relationship="TTQK7Model.FK_tblUploadFile_tblDonVi" FromRole="tblDonVi" ToRole="tblUploadFile" />
+        </EntityType>
+        <EntityType Name="tblMail">
+          <Key>
+            <PropertyRef Name="idMail" />
+          </Key>
+          <Property Name="idMail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="TieuDe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="idUser" Type="Int32" />
+          <NavigationProperty Name="tblUser" Relationship="TTQK7Model.FK_tblMail_tblUser" FromRole="tblMail" ToRole="tblUser" />
+          <NavigationProperty Name="tblMailFile" Relationship="TTQK7Model.FK_tblMailFile_tblMail" FromRole="tblMail" ToRole="tblMailFile" />
+          <NavigationProperty Name="tblMailUser" Relationship="TTQK7Model.FK_tblMailUser_tblMail" FromRole="tblMail" ToRole="tblMailUser" />
+        </EntityType>
+        <EntityType Name="tblMailFile">
+          <Key>
+            <PropertyRef Name="idFile" />
+          </Key>
+          <Property Name="idFile" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idMail" Type="Int32" />
+          <Property Name="TenFile" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblMail" Relationship="TTQK7Model.FK_tblMailFile_tblMail" FromRole="tblMailFile" ToRole="tblMail" />
+        </EntityType>
+        <EntityType Name="tblMailUser">
+          <Key>
+            <PropertyRef Name="idMailUser" />
+          </Key>
+          <Property Name="idMailUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idMail" Type="Int32" />
+          <Property Name="idUser" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="TraLoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblMail" Relationship="TTQK7Model.FK_tblMailUser_tblMail" FromRole="tblMailUser" ToRole="tblMail" />
+          <NavigationProperty Name="tblUser" Relationship="TTQK7Model.FK_tblMailUser_tblUser" FromRole="tblMailUser" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="idDonVi" Type="Int32" />
+          <Property Name="idChucVu" Type="Int32" />
+          <NavigationProperty Name="tblChucVu" Relationship="TTQK7Model.FK_tblUser_tblChucVu" FromRole="tblUser" ToRole="tblChucVu" />
+          <NavigationProperty Name="tblDonVi" Relationship="TTQK7Model.FK_tblUser_tblDonVi" FromRole="tblUser" ToRole="tblDonVi" />
+          <NavigationProperty Name="tblMail" Relationship="TTQK7Model.FK_tblMail_tblUser" FromRole="tblUser" ToRole="tblMail" />
+          <NavigationProperty Name="tblMailUser" Relationship="TTQK7Model.FK_tblMailUser_tblUser" FromRole="tblUser" ToRole="tblMailUser" />
+        </EntityType>
+        <EntityType Name="TrucBan">
+          <Key>
+            <PropertyRef Name="TrucBanID" />
+          </Key>
+          <Property Name="TrucBanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TrucBanTruong" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="TrucBanPho" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTruc" Type="DateTime" Precision="3" />
+          <Property Name="DonViID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ViBa_A6">
+          <Key>
+            <PropertyRef Name="A6_ID" />
+          </Key>
+          <Property Name="A6_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoDoiTuong" Type="Int32" />
+          <Property Name="GioLienLac" Type="Int32" />
+          <Property Name="GioPhatLienLac" Type="Int32" />
+          <Property Name="GioPhat" Type="Int32" />
+          <Property Name="GioPhat_Dut" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BaoCaoID" Type="Int32" />
+          <NavigationProperty Name="BaoCaoNgay" Relationship="TTQK7Model.FK_ViBa_A6_BaoCaoNgay" FromRole="ViBa_A6" ToRole="BaoCaoNgay" />
+        </EntityType>
+        <Association Name="FK_DonBien_A2_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.DonBien_A2" Role="DonBien_A2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="DonBien_A2">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HDT_B2_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.HDT_B2" Role="HDT_B2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="HDT_B2">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HTD_B3_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.HTD_B3" Role="HTD_B3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="HTD_B3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_47_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_47_B4" Role="QuanBuu_47_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_47_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_CongVan_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_CongVan_B4" Role="QuanBuu_CongVan_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_CongVan_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_HoaToc_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_HoaToc_B4" Role="QuanBuu_HoaToc_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_HoaToc_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_PhuongTien_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_PhuongTien_B4" Role="QuanBuu_PhuongTien_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_PhuongTien_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_ThuBao_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_ThuBao_B4" Role="QuanBuu_ThuBao_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_ThuBao_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_QuanBuu_VanKien_B4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.QuanBuu_VanKien_B4" Role="QuanBuu_VanKien_B4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="QuanBuu_VanKien_B4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SCN_A4_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.SCN_A4" Role="SCN_A4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SCN_A4">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_BTTM_A3_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.SongNgan_BTTM_A3" Role="SongNgan_BTTM_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_BTTM_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_HiepDong_A3_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.SongNgan_HiepDong_A3" Role="SongNgan_HiepDong_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_HiepDong_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongNgan_NoiBo_A3_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.SongNgan_NoiBo_A3" Role="SongNgan_NoiBo_A3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="SongNgan_NoiBo_A3">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBBD_A1_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.TBBD_A1" Role="TBBD_A1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="TBBD_A1">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ViBa_A6_BaoCaoNgay">
+          <End Type="TTQK7Model.BaoCaoNgay" Role="BaoCaoNgay" Multiplicity="0..1" />
+          <End Type="TTQK7Model.ViBa_A6" Role="ViBa_A6" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaoCaoNgay">
+              <PropertyRef Name="BaoCaoID" />
+            </Principal>
+            <Dependent Role="ViBa_A6">
+              <PropertyRef Name="BaoCaoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUser_tblChucVu">
+          <End Type="TTQK7Model.tblChucVu" Role="tblChucVu" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblUser" Role="tblUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblChucVu">
+              <PropertyRef Name="idChucVu" />
+            </Principal>
+            <Dependent Role="tblUser">
+              <PropertyRef Name="idChucVu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUser_tblDonVi">
+          <End Type="TTQK7Model.tblDonVi" Role="tblDonVi" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="TTQK7Model.tblUser" Role="tblUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDonVi">
+              <PropertyRef Name="DonViID" />
+            </Principal>
+            <Dependent Role="tblUser">
+              <PropertyRef Name="idDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMail_tblUser">
+          <End Type="TTQK7Model.tblUser" Role="tblUser" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblMail" Role="tblMail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="tblMail">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailFile_tblMail">
+          <End Type="TTQK7Model.tblMail" Role="tblMail" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblMailFile" Role="tblMailFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMail">
+              <PropertyRef Name="idMail" />
+            </Principal>
+            <Dependent Role="tblMailFile">
+              <PropertyRef Name="idMail" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailUser_tblMail">
+          <End Type="TTQK7Model.tblMail" Role="tblMail" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblMailUser" Role="tblMailUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMail">
+              <PropertyRef Name="idMail" />
+            </Principal>
+            <Dependent Role="tblMailUser">
+              <PropertyRef Name="idMail" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMailUser_tblUser">
+          <End Type="TTQK7Model.tblUser" Role="tblUser" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblMailUser" Role="tblMailUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="tblMailUser">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="BaoCaoTongHop_Result">
+          <Property Type="DateTime" Name="NgayBaoCao" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="IsGui" Nullable="true" />
+          <Property Type="String" Name="TenDonVi" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiBaoCao" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_Lanphatchuan" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuBo" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_QKPhatTinHieu" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienS" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienDong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienR" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhatLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_LanChuyenTiep" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoLanDut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_DayTieuHao" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_PhutLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDung" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MaySua" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDong" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_DatMayMoi" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="XeDap" Nullable="true" />
+          <Property Type="Int32" Name="MoTo" Nullable="true" />
+          <Property Type="Int32" Name="OTo" Nullable="true" />
+          <Property Type="Int32" Name="SoChuyen" Nullable="true" />
+          <Property Type="Double" Name="TrongLuong" Nullable="true" />
+          <Property Type="Int32" Name="CuLy" Nullable="true" />
+          <Property Type="String" Name="tonghopghichu" Nullable="true" MaxLength="4000" />
+        </ComplexType>
+        <ComplexType Name="BaoCaoTongHopHuyen_Result">
+          <Property Type="DateTime" Name="NgayBaoCao" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="IsGui" Nullable="true" />
+          <Property Type="String" Name="TenDonVi" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiBaoCao" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_Lanphatchuan" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuBo" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_QKPhatTinHieu" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienS" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienDong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienR" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhatLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_LanChuyenTiep" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoLanDut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_DayTieuHao" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_PhutLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDung" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MaySua" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDong" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_DatMayMoi" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="XeDap" Nullable="true" />
+          <Property Type="Int32" Name="MoTo" Nullable="true" />
+          <Property Type="Int32" Name="OTo" Nullable="true" />
+          <Property Type="Int32" Name="SoChuyen" Nullable="true" />
+          <Property Type="Double" Name="TrongLuong" Nullable="true" />
+          <Property Type="Int32" Name="CuLy" Nullable="true" />
+          <Property Type="String" Name="tonghopghichu" Nullable="true" MaxLength="4000" />
+        </ComplexType>
+        <ComplexType Name="Get_ListMailInbox_Result">
+          <Property Type="Int32" Name="idMail" Nullable="false" />
+          <Property Type="DateTime" Name="Ngay" Nullable="true" Precision="16" />
+          <Property Type="String" Name="TieuDe" Nullable="true" />
+          <Property Type="String" Name="NoiDung" Nullable="true" />
+          <Property Type="String" Name="DSNguoiNhan" Nullable="true" />
+          <Property Type="Int32" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Get_ListMailSent_Result">
+          <Property Type="Int32" Name="idMail" Nullable="false" />
+          <Property Type="DateTime" Name="Ngay" Nullable="true" Precision="16" />
+          <Property Type="String" Name="TieuDe" Nullable="true" />
+          <Property Type="String" Name="NoiDung" Nullable="true" />
+          <Property Type="String" Name="DSNguoiNhan" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="p_BaoCaoTongHop_View_Result">
+          <Property Type="DateTime" Name="NgayBaoCao" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="IsGui" Nullable="true" />
+          <Property Type="String" Name="TenDonVi" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiBaoCao" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_Lanphatchuan" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuBo" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_QKPhatTinHieu" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienS" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienDong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienR" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhatLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_LanChuyenTiep" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoLanDut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_DayTieuHao" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_PhutLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDung" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MaySua" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDong" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_DatMayMoi" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_VanKien_B4_Dong" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Ve" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Di" Nullable="true" />
+          <Property Type="Double" Name="QuanBuu_ThuBao_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="XeDap" Nullable="true" />
+          <Property Type="Int32" Name="MoTo" Nullable="true" />
+          <Property Type="Int32" Name="OTo" Nullable="true" />
+          <Property Type="Int32" Name="SoChuyen" Nullable="true" />
+          <Property Type="Double" Name="TrongLuong" Nullable="true" />
+          <Property Type="Int32" Name="CuLy" Nullable="true" />
+          <Property Type="Int32" Name="BaoCaoID" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="tblUploadFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameFile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="DonViID" Type="Int32" />
+          <NavigationProperty Name="tblDonVi" Relationship="TTQK7Model.FK_tblUploadFile_tblDonVi" FromRole="tblUploadFile" ToRole="tblDonVi" />
+        </EntityType>
+        <Association Name="FK_tblUploadFile_tblDonVi">
+          <End Type="TTQK7Model.tblDonVi" Role="tblDonVi" Multiplicity="0..1" />
+          <End Type="TTQK7Model.tblUploadFile" Role="tblUploadFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDonVi">
+              <PropertyRef Name="DonViID" />
+            </Principal>
+            <Dependent Role="tblUploadFile">
+              <PropertyRef Name="DonViID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_Thanh_BaoCaoThang_Result">
+          <Property Type="DateTime" Name="NgayBaoCao" Nullable="true" Precision="16" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_Lanphatchuan" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuBo" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_QKPhatTinHieu" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienS" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienDong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienR" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhatLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_LanChuyenTiep" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoLanDut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_DayTieuHao" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_PhutLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDung" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MaySua" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDong" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_DatMayMoi" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_XeDap" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_MoTo" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_OTo" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_SoChuyen" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_TrongLuong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_CuLy" Nullable="true" />
+          <Property Type="String" Name="GhiChu" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_Thanh_BaoCaoThang_DonVi_Result">
+          <Property Type="DateTime" Name="NgayBaoCao" Nullable="true" Precision="16" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhBTTM_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_CanhQK_Dut" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_Lanphatchuan" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuBo" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_ThuTinHieuQK" Nullable="true" />
+          <Property Type="Int32" Name="TBBD_A1_QKPhatTinHieu" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienS" Nullable="true" />
+          <Property Type="Int32" Name="DonBien_A2_DienT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_BTTM_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_GoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_NoiBo_A3_DienDong" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SongNgan_HiepDong_A3_DienR" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_TongSoPhien_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_SoPhienCT_Dut" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienS" Nullable="true" />
+          <Property Type="Int32" Name="SCN_A4_DienR" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhatLienLac" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat" Nullable="true" />
+          <Property Type="Int32" Name="ViBa_A6_GioPhat_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoDoiTuong" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_LanChuyenTiep" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_SoLanDut" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_DayTieuHao" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_GioLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HDT_B2_PhutLienLac" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDung" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MaySua" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_MayDong" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_DatMayMoi" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKe_Dut" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB" Nullable="true" />
+          <Property Type="Int32" Name="HTD_B3_TongSoTrKeNB_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_47_B4_TongVanHanh_Dut" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_HoaToc_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_CongVan_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_VanKien_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Ve" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Di" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_ThuBao_B4_Dong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_XeDap" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_MoTo" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_OTo" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_SoChuyen" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_TrongLuong" Nullable="true" />
+          <Property Type="Int32" Name="QuanBuu_PhuongTien_B4_CuLy" Nullable="true" />
+          <Property Type="String" Name="GhiChu" Nullable="true" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TTQK7ModelStoreContainer" CdmEntityContainer="TTQK7Entities">
+          <EntitySetMapping Name="BaoCaoNgay">
+            <EntityTypeMapping TypeName="TTQK7Model.BaoCaoNgay">
+              <MappingFragment StoreEntitySet="BaoCaoNgay">
+                <ScalarProperty Name="TrucBanPho" ColumnName="TrucBanPho" />
+                <ScalarProperty Name="TrucBanTruong" ColumnName="TrucBanTruong" />
+                <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DonBien_A2">
+            <EntityTypeMapping TypeName="TTQK7Model.DonBien_A2">
+              <MappingFragment StoreEntitySet="DonBien_A2">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DienT" ColumnName="DienT" />
+                <ScalarProperty Name="DienS" ColumnName="DienS" />
+                <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+                <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+                <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+                <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+                <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+                <ScalarProperty Name="A2_ID" ColumnName="A2_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HDT_B2">
+            <EntityTypeMapping TypeName="TTQK7Model.HDT_B2">
+              <MappingFragment StoreEntitySet="HDT_B2">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="PhutLienLac" ColumnName="PhutLienLac" />
+                <ScalarProperty Name="GioLienLac" ColumnName="GioLienLac" />
+                <ScalarProperty Name="DayTieuHao" ColumnName="DayTieuHao" />
+                <ScalarProperty Name="SoLanDut" ColumnName="SoLanDut" />
+                <ScalarProperty Name="LanChuyenTiep" ColumnName="LanChuyenTiep" />
+                <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+                <ScalarProperty Name="B2_ID" ColumnName="B2_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HTD_B3">
+            <EntityTypeMapping TypeName="TTQK7Model.HTD_B3">
+              <MappingFragment StoreEntitySet="HTD_B3">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="TongSoTrKeNB_Dut" ColumnName="TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="TongSoTrKeNB" ColumnName="TongSoTrKeNB" />
+                <ScalarProperty Name="TongSoTrKe_Dut" ColumnName="TongSoTrKe_Dut" />
+                <ScalarProperty Name="TongSoTrKe" ColumnName="TongSoTrKe" />
+                <ScalarProperty Name="DatMayMoi" ColumnName="DatMayMoi" />
+                <ScalarProperty Name="MayDong" ColumnName="MayDong" />
+                <ScalarProperty Name="MaySua" ColumnName="MaySua" />
+                <ScalarProperty Name="MayDung" ColumnName="MayDung" />
+                <ScalarProperty Name="B3_ID" ColumnName="B3_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_47_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_47_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_47_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="TongVanHanh_Dut" ColumnName="TongVanHanh_Dut" />
+                <ScalarProperty Name="TongVanHanh" ColumnName="TongVanHanh" />
+                <ScalarProperty Name="B4_47_ID" ColumnName="B4_47_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_CongVan_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_CongVan_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_CongVan_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="Dong" ColumnName="Dong" />
+                <ScalarProperty Name="Di" ColumnName="Di" />
+                <ScalarProperty Name="Ve" ColumnName="Ve" />
+                <ScalarProperty Name="B4_CongVan_ID" ColumnName="B4_CongVan_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_HoaToc_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_HoaToc_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_HoaToc_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="Dong" ColumnName="Dong" />
+                <ScalarProperty Name="Di" ColumnName="Di" />
+                <ScalarProperty Name="Ve" ColumnName="Ve" />
+                <ScalarProperty Name="B4_HoaToc_ID" ColumnName="B4_HoaToc_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_PhuongTien_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_PhuongTien_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_PhuongTien_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+                <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+                <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+                <ScalarProperty Name="OTo" ColumnName="OTo" />
+                <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+                <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+                <ScalarProperty Name="B4_PhuongTien_ID" ColumnName="B4_PhuongTien_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_ThuBao_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_ThuBao_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_ThuBao_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="Dong" ColumnName="Dong" />
+                <ScalarProperty Name="Di" ColumnName="Di" />
+                <ScalarProperty Name="Ve" ColumnName="Ve" />
+                <ScalarProperty Name="B4_ThuBao_ID" ColumnName="B4_ThuBao_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanBuu_VanKien_B4">
+            <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_VanKien_B4">
+              <MappingFragment StoreEntitySet="QuanBuu_VanKien_B4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="Dong" ColumnName="Dong" />
+                <ScalarProperty Name="Di" ColumnName="Di" />
+                <ScalarProperty Name="Ve" ColumnName="Ve" />
+                <ScalarProperty Name="B4_VanKien_ID" ColumnName="B4_VanKien_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SCN_A4">
+            <EntityTypeMapping TypeName="TTQK7Model.SCN_A4">
+              <MappingFragment StoreEntitySet="SCN_A4">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DienR" ColumnName="DienR" />
+                <ScalarProperty Name="DienS" ColumnName="DienS" />
+                <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+                <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+                <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+                <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+                <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+                <ScalarProperty Name="A4_ID" ColumnName="A4_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SongNgan_BTTM_A3">
+            <EntityTypeMapping TypeName="TTQK7Model.SongNgan_BTTM_A3">
+              <MappingFragment StoreEntitySet="SongNgan_BTTM_A3">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DienR" ColumnName="DienR" />
+                <ScalarProperty Name="DienS" ColumnName="DienS" />
+                <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+                <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+                <ScalarProperty Name="GoiCanh_Dut" ColumnName="GoiCanh_Dut" />
+                <ScalarProperty Name="GoiCanh" ColumnName="GoiCanh" />
+                <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+                <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+                <ScalarProperty Name="A3_BTTM_ID" ColumnName="A3_BTTM_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SongNgan_HiepDong_A3">
+            <EntityTypeMapping TypeName="TTQK7Model.SongNgan_HiepDong_A3">
+              <MappingFragment StoreEntitySet="SongNgan_HiepDong_A3">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DienR" ColumnName="DienR" />
+                <ScalarProperty Name="DienS" ColumnName="DienS" />
+                <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+                <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+                <ScalarProperty Name="A3_HiepDong_ID" ColumnName="A3_HiepDong_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SongNgan_NoiBo_A3">
+            <EntityTypeMapping TypeName="TTQK7Model.SongNgan_NoiBo_A3">
+              <MappingFragment StoreEntitySet="SongNgan_NoiBo_A3">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="DienDong" ColumnName="DienDong" />
+                <ScalarProperty Name="DienR" ColumnName="DienR" />
+                <ScalarProperty Name="DienS" ColumnName="DienS" />
+                <ScalarProperty Name="GoiCanh_Dut" ColumnName="GoiCanh_Dut" />
+                <ScalarProperty Name="GoiCanh" ColumnName="GoiCanh" />
+                <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+                <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+                <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+                <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+                <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+                <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+                <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+                <ScalarProperty Name="A3_NoiBo_ID" ColumnName="A3_NoiBo_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBBD_A1">
+            <EntityTypeMapping TypeName="TTQK7Model.TBBD_A1">
+              <MappingFragment StoreEntitySet="TBBD_A1">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="QKPhatTinHieu" ColumnName="QKPhatTinHieu" />
+                <ScalarProperty Name="ThuTinHieuQK" ColumnName="ThuTinHieuQK" />
+                <ScalarProperty Name="ThuTinHieuBo" ColumnName="ThuTinHieuBo" />
+                <ScalarProperty Name="Lanphatchuan" ColumnName="Lanphatchuan" />
+                <ScalarProperty Name="CanhQK_Dut" ColumnName="CanhQK_Dut" />
+                <ScalarProperty Name="CanhQK" ColumnName="CanhQK" />
+                <ScalarProperty Name="CanhBTTM_Dut" ColumnName="CanhBTTM_Dut" />
+                <ScalarProperty Name="CanhBTTM" ColumnName="CanhBTTM" />
+                <ScalarProperty Name="A1_ID" ColumnName="A1_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblChucVu">
+            <EntityTypeMapping TypeName="TTQK7Model.tblChucVu">
+              <MappingFragment StoreEntitySet="tblChucVu">
+                <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+                <ScalarProperty Name="idChucVu" ColumnName="idChucVu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDonVi">
+            <EntityTypeMapping TypeName="TTQK7Model.tblDonVi">
+              <MappingFragment StoreEntitySet="tblDonVi">
+                <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+                <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMail">
+            <EntityTypeMapping TypeName="TTQK7Model.tblMail">
+              <MappingFragment StoreEntitySet="tblMail">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="idMail" ColumnName="idMail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMailFile">
+            <EntityTypeMapping TypeName="TTQK7Model.tblMailFile">
+              <MappingFragment StoreEntitySet="tblMailFile">
+                <ScalarProperty Name="TenFile" ColumnName="TenFile" />
+                <ScalarProperty Name="idMail" ColumnName="idMail" />
+                <ScalarProperty Name="idFile" ColumnName="idFile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMailUser">
+            <EntityTypeMapping TypeName="TTQK7Model.tblMailUser">
+              <MappingFragment StoreEntitySet="tblMailUser">
+                <ScalarProperty Name="TraLoi" ColumnName="TraLoi" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="idMail" ColumnName="idMail" />
+                <ScalarProperty Name="idMailUser" ColumnName="idMailUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUser">
+            <EntityTypeMapping TypeName="TTQK7Model.tblUser">
+              <MappingFragment StoreEntitySet="tblUser">
+                <ScalarProperty Name="idChucVu" ColumnName="idChucVu" />
+                <ScalarProperty Name="idDonVi" ColumnName="idDonVi" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TrucBan">
+            <EntityTypeMapping TypeName="TTQK7Model.TrucBan">
+              <MappingFragment StoreEntitySet="TrucBan">
+                <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+                <ScalarProperty Name="NgayTruc" ColumnName="NgayTruc" />
+                <ScalarProperty Name="TrucBanPho" ColumnName="TrucBanPho" />
+                <ScalarProperty Name="TrucBanTruong" ColumnName="TrucBanTruong" />
+                <ScalarProperty Name="TrucBanID" ColumnName="TrucBanID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ViBa_A6">
+            <EntityTypeMapping TypeName="TTQK7Model.ViBa_A6">
+              <MappingFragment StoreEntitySet="ViBa_A6">
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="GioPhat_Dut" ColumnName="GioPhat_Dut" />
+                <ScalarProperty Name="GioPhat" ColumnName="GioPhat" />
+                <ScalarProperty Name="GioPhatLienLac" ColumnName="GioPhatLienLac" />
+                <ScalarProperty Name="GioLienLac" ColumnName="GioLienLac" />
+                <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+                <ScalarProperty Name="A6_ID" ColumnName="A6_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="BaoCaoTongHop" FunctionName="TTQK7Model.Store.BaoCaoTongHop">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.BaoCaoTongHop_Result">
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+                <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+                <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+                <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+                <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+                <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+                <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+                <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+                <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+                <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+                <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+                <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+                <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+                <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+                <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+                <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+                <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+                <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+                <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+                <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+                <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+                <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+                <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+                <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+                <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+                <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+                <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+                <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+                <ScalarProperty Name="OTo" ColumnName="OTo" />
+                <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+                <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+                <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+                <ScalarProperty Name="tonghopghichu" ColumnName="tonghopghichu" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaoCaoTongHopHuyen" FunctionName="TTQK7Model.Store.BaoCaoTongHopHuyen">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.BaoCaoTongHopHuyen_Result">
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+                <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+                <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+                <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+                <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+                <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+                <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+                <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+                <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+                <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+                <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+                <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+                <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+                <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+                <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+                <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+                <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+                <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+                <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+                <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+                <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+                <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+                <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+                <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+                <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+                <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+                <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+                <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+                <ScalarProperty Name="OTo" ColumnName="OTo" />
+                <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+                <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+                <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+                <ScalarProperty Name="tonghopghichu" ColumnName="tonghopghichu" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Get_DSNguoiNhan" FunctionName="TTQK7Model.Store.Get_DSNguoiNhan" />
+          <FunctionImportMapping FunctionImportName="Get_ListMailInbox" FunctionName="TTQK7Model.Store.Get_ListMailInbox">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.Get_ListMailInbox_Result">
+                <ScalarProperty Name="idMail" ColumnName="idMail" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="DSNguoiNhan" ColumnName="DSNguoiNhan" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Get_ListMailSent" FunctionName="TTQK7Model.Store.Get_ListMailSent">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.Get_ListMailSent_Result">
+                <ScalarProperty Name="idMail" ColumnName="idMail" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="DSNguoiNhan" ColumnName="DSNguoiNhan" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="p_BaoCaoTongHop_View" FunctionName="TTQK7Model.Store.p_BaoCaoTongHop_View">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.p_BaoCaoTongHop_View_Result">
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+                <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+                <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+                <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+                <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+                <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+                <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+                <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+                <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+                <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+                <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+                <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+                <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+                <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+                <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+                <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+                <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+                <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+                <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+                <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+                <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+                <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+                <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+                <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+                <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+                <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+                <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+                <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+                <ScalarProperty Name="OTo" ColumnName="OTo" />
+                <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+                <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+                <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+                <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tblUploadFile">
+            <EntityTypeMapping TypeName="TTQK7Model.tblUploadFile">
+              <MappingFragment StoreEntitySet="tblUploadFile">
+                <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NameFile" ColumnName="NameFile" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_Thanh_BaoCaoThang" FunctionName="TTQK7Model.Store.sp_Thanh_BaoCaoThang">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.sp_Thanh_BaoCaoThang_Result">
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+                <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+                <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+                <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+                <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+                <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+                <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+                <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+                <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+                <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+                <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+                <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+                <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+                <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+                <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+                <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+                <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+                <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+                <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+                <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+                <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+                <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+                <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+                <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_XeDap" ColumnName="QuanBuu_PhuongTien_B4_XeDap" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_MoTo" ColumnName="QuanBuu_PhuongTien_B4_MoTo" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_OTo" ColumnName="QuanBuu_PhuongTien_B4_OTo" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_SoChuyen" ColumnName="QuanBuu_PhuongTien_B4_SoChuyen" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_TrongLuong" ColumnName="QuanBuu_PhuongTien_B4_TrongLuong" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_CuLy" ColumnName="QuanBuu_PhuongTien_B4_CuLy" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_Thanh_BaoCaoThang_DonVi" FunctionName="TTQK7Model.Store.sp_Thanh_BaoCaoThang_DonVi">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TTQK7Model.sp_Thanh_BaoCaoThang_DonVi_Result">
+                <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+                <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+                <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+                <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+                <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+                <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+                <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+                <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+                <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+                <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+                <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+                <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+                <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+                <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+                <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+                <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+                <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+                <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+                <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+                <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+                <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+                <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+                <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+                <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+                <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+                <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+                <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+                <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+                <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+                <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+                <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+                <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+                <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+                <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+                <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+                <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+                <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+                <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+                <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+                <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_XeDap" ColumnName="QuanBuu_PhuongTien_B4_XeDap" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_MoTo" ColumnName="QuanBuu_PhuongTien_B4_MoTo" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_OTo" ColumnName="QuanBuu_PhuongTien_B4_OTo" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_SoChuyen" ColumnName="QuanBuu_PhuongTien_B4_SoChuyen" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_TrongLuong" ColumnName="QuanBuu_PhuongTien_B4_TrongLuong" />
+                <ScalarProperty Name="QuanBuu_PhuongTien_B4_CuLy" ColumnName="QuanBuu_PhuongTien_B4_CuLy" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

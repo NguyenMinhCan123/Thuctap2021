@@ -1,0 +1,42 @@
+﻿@model TTQK7.tblMail
+
+@{
+    ViewBag.Title = "Chi tiết thư điện tử";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <p class="page-header thongtinchung">
+            Nội dung thư
+        </p>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<table class="table no-border table-striped table-hover">
+    <tr>
+        <th>Người gửi:</th>
+        <td>@ViewBag.NguoiGui</td>
+    </tr>
+    <tr>
+        <th>Người nhận:</th>
+        <td>@ViewBag.NguoiNhan</td>
+    </tr>
+    <tr>
+        <th>Ngày gửi:</th>
+        <td>@Html.DisplayFor(model => model.Ngay)</td>
+    </tr>
+    <tr>
+        <th>Nội dung chính:</th>
+        <td><span style="white-space: pre-line">@Html.DisplayFor(model => model.NoiDung)</span></td>
+    </tr>
+    <tr>
+        <th>File đính kèm</th>
+        <td>
+            @if (ViewBag.FileDinhKem != null)
+            {
+                <a href="@Url.Action("GetFile", "tblMails" ,new { fileName=ViewBag.FileDinhKem})" target="_blank" class="btn btn-success btn-xs"><i class="fa fa-download m-right-xs"></i></a><span>@ViewBag.FileDinhKem</span>
+            }
+        </td>
+    </tr>
+
+</table>

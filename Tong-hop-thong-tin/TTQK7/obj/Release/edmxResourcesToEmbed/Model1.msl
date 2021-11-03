@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TTQK7ModelStoreContainer" CdmEntityContainer="TTQK7Entities">
+    <EntitySetMapping Name="BaoCaoNgay">
+      <EntityTypeMapping TypeName="TTQK7Model.BaoCaoNgay">
+        <MappingFragment StoreEntitySet="BaoCaoNgay">
+          <ScalarProperty Name="TrucBanPho" ColumnName="TrucBanPho" />
+          <ScalarProperty Name="TrucBanTruong" ColumnName="TrucBanTruong" />
+          <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonBien_A2">
+      <EntityTypeMapping TypeName="TTQK7Model.DonBien_A2">
+        <MappingFragment StoreEntitySet="DonBien_A2">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DienT" ColumnName="DienT" />
+          <ScalarProperty Name="DienS" ColumnName="DienS" />
+          <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+          <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+          <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+          <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+          <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+          <ScalarProperty Name="A2_ID" ColumnName="A2_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDT_B2">
+      <EntityTypeMapping TypeName="TTQK7Model.HDT_B2">
+        <MappingFragment StoreEntitySet="HDT_B2">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="PhutLienLac" ColumnName="PhutLienLac" />
+          <ScalarProperty Name="GioLienLac" ColumnName="GioLienLac" />
+          <ScalarProperty Name="DayTieuHao" ColumnName="DayTieuHao" />
+          <ScalarProperty Name="SoLanDut" ColumnName="SoLanDut" />
+          <ScalarProperty Name="LanChuyenTiep" ColumnName="LanChuyenTiep" />
+          <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+          <ScalarProperty Name="B2_ID" ColumnName="B2_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HTD_B3">
+      <EntityTypeMapping TypeName="TTQK7Model.HTD_B3">
+        <MappingFragment StoreEntitySet="HTD_B3">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TongSoTrKeNB_Dut" ColumnName="TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="TongSoTrKeNB" ColumnName="TongSoTrKeNB" />
+          <ScalarProperty Name="TongSoTrKe_Dut" ColumnName="TongSoTrKe_Dut" />
+          <ScalarProperty Name="TongSoTrKe" ColumnName="TongSoTrKe" />
+          <ScalarProperty Name="DatMayMoi" ColumnName="DatMayMoi" />
+          <ScalarProperty Name="MayDong" ColumnName="MayDong" />
+          <ScalarProperty Name="MaySua" ColumnName="MaySua" />
+          <ScalarProperty Name="MayDung" ColumnName="MayDung" />
+          <ScalarProperty Name="B3_ID" ColumnName="B3_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_47_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_47_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_47_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TongVanHanh_Dut" ColumnName="TongVanHanh_Dut" />
+          <ScalarProperty Name="TongVanHanh" ColumnName="TongVanHanh" />
+          <ScalarProperty Name="B4_47_ID" ColumnName="B4_47_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_CongVan_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_CongVan_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_CongVan_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Dong" ColumnName="Dong" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Ve" ColumnName="Ve" />
+          <ScalarProperty Name="B4_CongVan_ID" ColumnName="B4_CongVan_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_HoaToc_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_HoaToc_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_HoaToc_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Dong" ColumnName="Dong" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Ve" ColumnName="Ve" />
+          <ScalarProperty Name="B4_HoaToc_ID" ColumnName="B4_HoaToc_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_PhuongTien_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_PhuongTien_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_PhuongTien_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+          <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+          <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+          <ScalarProperty Name="OTo" ColumnName="OTo" />
+          <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+          <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+          <ScalarProperty Name="B4_PhuongTien_ID" ColumnName="B4_PhuongTien_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_ThuBao_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_ThuBao_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_ThuBao_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Dong" ColumnName="Dong" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Ve" ColumnName="Ve" />
+          <ScalarProperty Name="B4_ThuBao_ID" ColumnName="B4_ThuBao_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanBuu_VanKien_B4">
+      <EntityTypeMapping TypeName="TTQK7Model.QuanBuu_VanKien_B4">
+        <MappingFragment StoreEntitySet="QuanBuu_VanKien_B4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Dong" ColumnName="Dong" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Ve" ColumnName="Ve" />
+          <ScalarProperty Name="B4_VanKien_ID" ColumnName="B4_VanKien_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCN_A4">
+      <EntityTypeMapping TypeName="TTQK7Model.SCN_A4">
+        <MappingFragment StoreEntitySet="SCN_A4">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DienR" ColumnName="DienR" />
+          <ScalarProperty Name="DienS" ColumnName="DienS" />
+          <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+          <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+          <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+          <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+          <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+          <ScalarProperty Name="A4_ID" ColumnName="A4_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongNgan_BTTM_A3">
+      <EntityTypeMapping TypeName="TTQK7Model.SongNgan_BTTM_A3">
+        <MappingFragment StoreEntitySet="SongNgan_BTTM_A3">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DienR" ColumnName="DienR" />
+          <ScalarProperty Name="DienS" ColumnName="DienS" />
+          <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+          <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+          <ScalarProperty Name="GoiCanh_Dut" ColumnName="GoiCanh_Dut" />
+          <ScalarProperty Name="GoiCanh" ColumnName="GoiCanh" />
+          <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+          <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+          <ScalarProperty Name="A3_BTTM_ID" ColumnName="A3_BTTM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongNgan_HiepDong_A3">
+      <EntityTypeMapping TypeName="TTQK7Model.SongNgan_HiepDong_A3">
+        <MappingFragment StoreEntitySet="SongNgan_HiepDong_A3">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DienR" ColumnName="DienR" />
+          <ScalarProperty Name="DienS" ColumnName="DienS" />
+          <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+          <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+          <ScalarProperty Name="A3_HiepDong_ID" ColumnName="A3_HiepDong_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongNgan_NoiBo_A3">
+      <EntityTypeMapping TypeName="TTQK7Model.SongNgan_NoiBo_A3">
+        <MappingFragment StoreEntitySet="SongNgan_NoiBo_A3">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="DienDong" ColumnName="DienDong" />
+          <ScalarProperty Name="DienR" ColumnName="DienR" />
+          <ScalarProperty Name="DienS" ColumnName="DienS" />
+          <ScalarProperty Name="GoiCanh_Dut" ColumnName="GoiCanh_Dut" />
+          <ScalarProperty Name="GoiCanh" ColumnName="GoiCanh" />
+          <ScalarProperty Name="TraLoiCanh_Dut" ColumnName="TraLoiCanh_Dut" />
+          <ScalarProperty Name="TraLoiCanh" ColumnName="TraLoiCanh" />
+          <ScalarProperty Name="SoPhienCT_Dut" ColumnName="SoPhienCT_Dut" />
+          <ScalarProperty Name="SoPhienCT" ColumnName="SoPhienCT" />
+          <ScalarProperty Name="TongSoPhien_Dut" ColumnName="TongSoPhien_Dut" />
+          <ScalarProperty Name="TongSoPhien" ColumnName="TongSoPhien" />
+          <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+          <ScalarProperty Name="A3_NoiBo_ID" ColumnName="A3_NoiBo_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBBD_A1">
+      <EntityTypeMapping TypeName="TTQK7Model.TBBD_A1">
+        <MappingFragment StoreEntitySet="TBBD_A1">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="QKPhatTinHieu" ColumnName="QKPhatTinHieu" />
+          <ScalarProperty Name="ThuTinHieuQK" ColumnName="ThuTinHieuQK" />
+          <ScalarProperty Name="ThuTinHieuBo" ColumnName="ThuTinHieuBo" />
+          <ScalarProperty Name="Lanphatchuan" ColumnName="Lanphatchuan" />
+          <ScalarProperty Name="CanhQK_Dut" ColumnName="CanhQK_Dut" />
+          <ScalarProperty Name="CanhQK" ColumnName="CanhQK" />
+          <ScalarProperty Name="CanhBTTM_Dut" ColumnName="CanhBTTM_Dut" />
+          <ScalarProperty Name="CanhBTTM" ColumnName="CanhBTTM" />
+          <ScalarProperty Name="A1_ID" ColumnName="A1_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChucVu">
+      <EntityTypeMapping TypeName="TTQK7Model.tblChucVu">
+        <MappingFragment StoreEntitySet="tblChucVu">
+          <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+          <ScalarProperty Name="idChucVu" ColumnName="idChucVu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDonVi">
+      <EntityTypeMapping TypeName="TTQK7Model.tblDonVi">
+        <MappingFragment StoreEntitySet="tblDonVi">
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMail">
+      <EntityTypeMapping TypeName="TTQK7Model.tblMail">
+        <MappingFragment StoreEntitySet="tblMail">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMailFile">
+      <EntityTypeMapping TypeName="TTQK7Model.tblMailFile">
+        <MappingFragment StoreEntitySet="tblMailFile">
+          <ScalarProperty Name="TenFile" ColumnName="TenFile" />
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+          <ScalarProperty Name="idFile" ColumnName="idFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMailUser">
+      <EntityTypeMapping TypeName="TTQK7Model.tblMailUser">
+        <MappingFragment StoreEntitySet="tblMailUser">
+          <ScalarProperty Name="TraLoi" ColumnName="TraLoi" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+          <ScalarProperty Name="idMailUser" ColumnName="idMailUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUser">
+      <EntityTypeMapping TypeName="TTQK7Model.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="idChucVu" ColumnName="idChucVu" />
+          <ScalarProperty Name="idDonVi" ColumnName="idDonVi" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrucBan">
+      <EntityTypeMapping TypeName="TTQK7Model.TrucBan">
+        <MappingFragment StoreEntitySet="TrucBan">
+          <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+          <ScalarProperty Name="NgayTruc" ColumnName="NgayTruc" />
+          <ScalarProperty Name="TrucBanPho" ColumnName="TrucBanPho" />
+          <ScalarProperty Name="TrucBanTruong" ColumnName="TrucBanTruong" />
+          <ScalarProperty Name="TrucBanID" ColumnName="TrucBanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViBa_A6">
+      <EntityTypeMapping TypeName="TTQK7Model.ViBa_A6">
+        <MappingFragment StoreEntitySet="ViBa_A6">
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="GioPhat_Dut" ColumnName="GioPhat_Dut" />
+          <ScalarProperty Name="GioPhat" ColumnName="GioPhat" />
+          <ScalarProperty Name="GioPhatLienLac" ColumnName="GioPhatLienLac" />
+          <ScalarProperty Name="GioLienLac" ColumnName="GioLienLac" />
+          <ScalarProperty Name="SoDoiTuong" ColumnName="SoDoiTuong" />
+          <ScalarProperty Name="A6_ID" ColumnName="A6_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="BaoCaoTongHop" FunctionName="TTQK7Model.Store.BaoCaoTongHop">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.BaoCaoTongHop_Result">
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+          <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+          <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+          <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+          <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+          <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+          <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+          <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+          <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+          <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+          <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+          <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+          <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+          <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+          <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+          <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+          <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+          <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+          <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+          <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+          <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+          <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+          <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+          <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+          <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+          <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+          <ScalarProperty Name="OTo" ColumnName="OTo" />
+          <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+          <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+          <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+          <ScalarProperty Name="tonghopghichu" ColumnName="tonghopghichu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaoCaoTongHopHuyen" FunctionName="TTQK7Model.Store.BaoCaoTongHopHuyen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.BaoCaoTongHopHuyen_Result">
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+          <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+          <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+          <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+          <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+          <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+          <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+          <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+          <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+          <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+          <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+          <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+          <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+          <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+          <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+          <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+          <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+          <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+          <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+          <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+          <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+          <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+          <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+          <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+          <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+          <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+          <ScalarProperty Name="OTo" ColumnName="OTo" />
+          <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+          <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+          <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+          <ScalarProperty Name="tonghopghichu" ColumnName="tonghopghichu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Get_DSNguoiNhan" FunctionName="TTQK7Model.Store.Get_DSNguoiNhan" />
+    <FunctionImportMapping FunctionImportName="Get_ListMailInbox" FunctionName="TTQK7Model.Store.Get_ListMailInbox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.Get_ListMailInbox_Result">
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="DSNguoiNhan" ColumnName="DSNguoiNhan" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Get_ListMailSent" FunctionName="TTQK7Model.Store.Get_ListMailSent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.Get_ListMailSent_Result">
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="DSNguoiNhan" ColumnName="DSNguoiNhan" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_BaoCaoTongHop_View" FunctionName="TTQK7Model.Store.p_BaoCaoTongHop_View">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.p_BaoCaoTongHop_View_Result">
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="IsGui" ColumnName="IsGui" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+          <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+          <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+          <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+          <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+          <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+          <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+          <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+          <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+          <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+          <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+          <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+          <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+          <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+          <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+          <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+          <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+          <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+          <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+          <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+          <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+          <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+          <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+          <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+          <ScalarProperty Name="XeDap" ColumnName="XeDap" />
+          <ScalarProperty Name="MoTo" ColumnName="MoTo" />
+          <ScalarProperty Name="OTo" ColumnName="OTo" />
+          <ScalarProperty Name="SoChuyen" ColumnName="SoChuyen" />
+          <ScalarProperty Name="TrongLuong" ColumnName="TrongLuong" />
+          <ScalarProperty Name="CuLy" ColumnName="CuLy" />
+          <ScalarProperty Name="BaoCaoID" ColumnName="BaoCaoID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tblUploadFile">
+      <EntityTypeMapping TypeName="TTQK7Model.tblUploadFile">
+        <MappingFragment StoreEntitySet="tblUploadFile">
+          <ScalarProperty Name="DonViID" ColumnName="DonViID" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NameFile" ColumnName="NameFile" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Thanh_BaoCaoThang" FunctionName="TTQK7Model.Store.sp_Thanh_BaoCaoThang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.sp_Thanh_BaoCaoThang_Result">
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+          <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+          <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+          <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+          <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+          <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+          <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+          <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+          <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+          <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+          <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+          <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+          <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+          <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+          <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+          <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+          <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+          <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+          <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+          <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+          <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+          <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+          <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+          <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_XeDap" ColumnName="QuanBuu_PhuongTien_B4_XeDap" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_MoTo" ColumnName="QuanBuu_PhuongTien_B4_MoTo" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_OTo" ColumnName="QuanBuu_PhuongTien_B4_OTo" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_SoChuyen" ColumnName="QuanBuu_PhuongTien_B4_SoChuyen" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_TrongLuong" ColumnName="QuanBuu_PhuongTien_B4_TrongLuong" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_CuLy" ColumnName="QuanBuu_PhuongTien_B4_CuLy" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Thanh_BaoCaoThang_DonVi" FunctionName="TTQK7Model.Store.sp_Thanh_BaoCaoThang_DonVi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TTQK7Model.sp_Thanh_BaoCaoThang_DonVi_Result">
+          <ScalarProperty Name="NgayBaoCao" ColumnName="NgayBaoCao" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM" ColumnName="TBBD_A1_CanhBTTM" />
+          <ScalarProperty Name="TBBD_A1_CanhBTTM_Dut" ColumnName="TBBD_A1_CanhBTTM_Dut" />
+          <ScalarProperty Name="TBBD_A1_CanhQK" ColumnName="TBBD_A1_CanhQK" />
+          <ScalarProperty Name="TBBD_A1_CanhQK_Dut" ColumnName="TBBD_A1_CanhQK_Dut" />
+          <ScalarProperty Name="TBBD_A1_Lanphatchuan" ColumnName="TBBD_A1_Lanphatchuan" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuBo" ColumnName="TBBD_A1_ThuTinHieuBo" />
+          <ScalarProperty Name="TBBD_A1_ThuTinHieuQK" ColumnName="TBBD_A1_ThuTinHieuQK" />
+          <ScalarProperty Name="TBBD_A1_QKPhatTinHieu" ColumnName="TBBD_A1_QKPhatTinHieu" />
+          <ScalarProperty Name="DonBien_A2_SoDoiTuong" ColumnName="DonBien_A2_SoDoiTuong" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien" ColumnName="DonBien_A2_TongSoPhien" />
+          <ScalarProperty Name="DonBien_A2_TongSoPhien_Dut" ColumnName="DonBien_A2_TongSoPhien_Dut" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT" ColumnName="DonBien_A2_SoPhienCT" />
+          <ScalarProperty Name="DonBien_A2_SoPhienCT_Dut" ColumnName="DonBien_A2_SoPhienCT_Dut" />
+          <ScalarProperty Name="DonBien_A2_DienS" ColumnName="DonBien_A2_DienS" />
+          <ScalarProperty Name="DonBien_A2_DienT" ColumnName="DonBien_A2_DienT" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien" ColumnName="SongNgan_BTTM_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TongSoPhien_Dut" ColumnName="SongNgan_BTTM_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh" ColumnName="SongNgan_BTTM_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_GoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh" ColumnName="SongNgan_BTTM_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_TraLoiCanh_Dut" ColumnName="SongNgan_BTTM_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienS" ColumnName="SongNgan_BTTM_A3_DienS" />
+          <ScalarProperty Name="SongNgan_BTTM_A3_DienR" ColumnName="SongNgan_BTTM_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoDoiTuong" ColumnName="SongNgan_NoiBo_A3_SoDoiTuong" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien" ColumnName="SongNgan_NoiBo_A3_TongSoPhien" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TongSoPhien_Dut" ColumnName="SongNgan_NoiBo_A3_TongSoPhien_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT" ColumnName="SongNgan_NoiBo_A3_SoPhienCT" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_SoPhienCT_Dut" ColumnName="SongNgan_NoiBo_A3_SoPhienCT_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_TraLoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh" ColumnName="SongNgan_NoiBo_A3_GoiCanh" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_GoiCanh_Dut" ColumnName="SongNgan_NoiBo_A3_GoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienS" ColumnName="SongNgan_NoiBo_A3_DienS" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienR" ColumnName="SongNgan_NoiBo_A3_DienR" />
+          <ScalarProperty Name="SongNgan_NoiBo_A3_DienDong" ColumnName="SongNgan_NoiBo_A3_DienDong" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_TraLoiCanh_Dut" ColumnName="SongNgan_HiepDong_A3_TraLoiCanh_Dut" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienS" ColumnName="SongNgan_HiepDong_A3_DienS" />
+          <ScalarProperty Name="SongNgan_HiepDong_A3_DienR" ColumnName="SongNgan_HiepDong_A3_DienR" />
+          <ScalarProperty Name="SCN_A4_SoDoiTuong" ColumnName="SCN_A4_SoDoiTuong" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien" ColumnName="SCN_A4_TongSoPhien" />
+          <ScalarProperty Name="SCN_A4_TongSoPhien_Dut" ColumnName="SCN_A4_TongSoPhien_Dut" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT" ColumnName="SCN_A4_SoPhienCT" />
+          <ScalarProperty Name="SCN_A4_SoPhienCT_Dut" ColumnName="SCN_A4_SoPhienCT_Dut" />
+          <ScalarProperty Name="SCN_A4_DienS" ColumnName="SCN_A4_DienS" />
+          <ScalarProperty Name="SCN_A4_DienR" ColumnName="SCN_A4_DienR" />
+          <ScalarProperty Name="ViBa_A6_SoDoiTuong" ColumnName="ViBa_A6_SoDoiTuong" />
+          <ScalarProperty Name="ViBa_A6_GioLienLac" ColumnName="ViBa_A6_GioLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhatLienLac" ColumnName="ViBa_A6_GioPhatLienLac" />
+          <ScalarProperty Name="ViBa_A6_GioPhat" ColumnName="ViBa_A6_GioPhat" />
+          <ScalarProperty Name="ViBa_A6_GioPhat_Dut" ColumnName="ViBa_A6_GioPhat_Dut" />
+          <ScalarProperty Name="HDT_B2_SoDoiTuong" ColumnName="HDT_B2_SoDoiTuong" />
+          <ScalarProperty Name="HDT_B2_LanChuyenTiep" ColumnName="HDT_B2_LanChuyenTiep" />
+          <ScalarProperty Name="HDT_B2_SoLanDut" ColumnName="HDT_B2_SoLanDut" />
+          <ScalarProperty Name="HDT_B2_DayTieuHao" ColumnName="HDT_B2_DayTieuHao" />
+          <ScalarProperty Name="HDT_B2_GioLienLac" ColumnName="HDT_B2_GioLienLac" />
+          <ScalarProperty Name="HDT_B2_PhutLienLac" ColumnName="HDT_B2_PhutLienLac" />
+          <ScalarProperty Name="HTD_B3_MayDung" ColumnName="HTD_B3_MayDung" />
+          <ScalarProperty Name="HTD_B3_MaySua" ColumnName="HTD_B3_MaySua" />
+          <ScalarProperty Name="HTD_B3_MayDong" ColumnName="HTD_B3_MayDong" />
+          <ScalarProperty Name="HTD_B3_DatMayMoi" ColumnName="HTD_B3_DatMayMoi" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe" ColumnName="HTD_B3_TongSoTrKe" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKe_Dut" ColumnName="HTD_B3_TongSoTrKe_Dut" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB" ColumnName="HTD_B3_TongSoTrKeNB" />
+          <ScalarProperty Name="HTD_B3_TongSoTrKeNB_Dut" ColumnName="HTD_B3_TongSoTrKeNB_Dut" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh" ColumnName="QuanBuu_47_B4_TongVanHanh" />
+          <ScalarProperty Name="QuanBuu_47_B4_TongVanHanh_Dut" ColumnName="QuanBuu_47_B4_TongVanHanh_Dut" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Ve" ColumnName="QuanBuu_HoaToc_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Di" ColumnName="QuanBuu_HoaToc_B4_Di" />
+          <ScalarProperty Name="QuanBuu_HoaToc_B4_Dong" ColumnName="QuanBuu_HoaToc_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Ve" ColumnName="QuanBuu_CongVan_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Di" ColumnName="QuanBuu_CongVan_B4_Di" />
+          <ScalarProperty Name="QuanBuu_CongVan_B4_Dong" ColumnName="QuanBuu_CongVan_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Ve" ColumnName="QuanBuu_VanKien_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Di" ColumnName="QuanBuu_VanKien_B4_Di" />
+          <ScalarProperty Name="QuanBuu_VanKien_B4_Dong" ColumnName="QuanBuu_VanKien_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Ve" ColumnName="QuanBuu_ThuBao_B4_Ve" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Di" ColumnName="QuanBuu_ThuBao_B4_Di" />
+          <ScalarProperty Name="QuanBuu_ThuBao_B4_Dong" ColumnName="QuanBuu_ThuBao_B4_Dong" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_XeDap" ColumnName="QuanBuu_PhuongTien_B4_XeDap" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_MoTo" ColumnName="QuanBuu_PhuongTien_B4_MoTo" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_OTo" ColumnName="QuanBuu_PhuongTien_B4_OTo" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_SoChuyen" ColumnName="QuanBuu_PhuongTien_B4_SoChuyen" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_TrongLuong" ColumnName="QuanBuu_PhuongTien_B4_TrongLuong" />
+          <ScalarProperty Name="QuanBuu_PhuongTien_B4_CuLy" ColumnName="QuanBuu_PhuongTien_B4_CuLy" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

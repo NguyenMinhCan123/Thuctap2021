@@ -1,0 +1,127 @@
+Time: 04/02/2021 03:54:59 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách mất thời gian: 109
+StackTrace: Đã qua chức năng lấy danh sách mất thời gian: 109
+Source: Đã qua chức năng lấy danh sách mất thời gian: 109
+TargetSite: Đã qua chức năng lấy danh sách mất thời gian: 109
+-----------------------------------------------------------
+
+Time: 04/02/2021 03:55:16 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách mất thời gian: 13
+StackTrace: Đã qua chức năng lấy danh sách mất thời gian: 13
+Source: Đã qua chức năng lấy danh sách mất thời gian: 13
+TargetSite: Đã qua chức năng lấy danh sách mất thời gian: 13
+-----------------------------------------------------------
+
+Time: 04/02/2021 03:55:34 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách mất thời gian: 37
+StackTrace: Đã qua chức năng lấy danh sách mất thời gian: 37
+Source: Đã qua chức năng lấy danh sách mất thời gian: 37
+TargetSite: Đã qua chức năng lấy danh sách mất thời gian: 37
+-----------------------------------------------------------
+
+Time: 04/02/2021 03:55:39 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách mất thời gian: 26
+StackTrace: Đã qua chức năng lấy danh sách mất thời gian: 26
+Source: Đã qua chức năng lấy danh sách mất thời gian: 26
+TargetSite: Đã qua chức năng lấy danh sách mất thời gian: 26
+-----------------------------------------------------------
+
+Time: 04/02/2021 04:32:25 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 79
+StackTrace: Đã qua chức năng lấy danh sách: 79
+Source: Đã qua chức năng lấy danh sách: 79
+TargetSite: Đã qua chức năng lấy danh sách: 79
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:01:20 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách huyện: 51
+StackTrace: Đã qua chức năng lấy danh sách huyện: 51
+Source: Đã qua chức năng lấy danh sách huyện: 51
+TargetSite: Đã qua chức năng lấy danh sách huyện: 51
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:02:11 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 52
+StackTrace: Đã qua chức năng lấy danh sách: 52
+Source: Đã qua chức năng lấy danh sách: 52
+TargetSite: Đã qua chức năng lấy danh sách: 52
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:06:28 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách huyện: 49
+StackTrace: Đã qua chức năng lấy danh sách huyện: 49
+Source: Đã qua chức năng lấy danh sách huyện: 49
+TargetSite: Đã qua chức năng lấy danh sách huyện: 49
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:12:07 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 75
+StackTrace: Đã qua chức năng lấy danh sách: 75
+Source: Đã qua chức năng lấy danh sách: 75
+TargetSite: Đã qua chức năng lấy danh sách: 75
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:16:24 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 77
+StackTrace: Đã qua chức năng lấy danh sách: 77
+Source: Đã qua chức năng lấy danh sách: 77
+TargetSite: Đã qua chức năng lấy danh sách: 77
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:16:32 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 6
+StackTrace: Đã qua chức năng lấy danh sách: 6
+Source: Đã qua chức năng lấy danh sách: 6
+TargetSite: Đã qua chức năng lấy danh sách: 6
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:16:48 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 33
+StackTrace: Đã qua chức năng lấy danh sách: 33
+Source: Đã qua chức năng lấy danh sách: 33
+TargetSite: Đã qua chức năng lấy danh sách: 33
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:16:53 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 7
+StackTrace: Đã qua chức năng lấy danh sách: 7
+Source: Đã qua chức năng lấy danh sách: 7
+TargetSite: Đã qua chức năng lấy danh sách: 7
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:17:30 PM
+-----------------------------------------------------------
+Message: Đã qua chức năng lấy danh sách: 21
+StackTrace: Đã qua chức năng lấy danh sách: 21
+Source: Đã qua chức năng lấy danh sách: 21
+TargetSite: Đã qua chức năng lấy danh sách: 21
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:23:32 PM
+-----------------------------------------------------------
+Tạo báo cáo theo ngày: 04/02/2021 17:23:32, baocaoid:61donviid: 1
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:24:20 PM
+-----------------------------------------------------------
+Sửa báo cáo theo ngày: 04/02/2021 17:24:20, baocaoid:61donviid: 
+-----------------------------------------------------------
+
+Time: 04/02/2021 05:25:14 PM
+-----------------------------------------------------------
+Đã qua chức năng lấy danh sách: 54
+-----------------------------------------------------------
+

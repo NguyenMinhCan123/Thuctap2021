@@ -1,0 +1,16 @@
+﻿@model TTQK7.tblDonVi 
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">Chi tiết đơn vị</h4>
+</div>
+<div class="modal-body">
+    <table class="table no-border table-striped table-hover">
+        <tr>
+            <th>Đơn vị</th>
+            <td>@Html.DisplayFor(model => model.TenDonVi )</td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" data-dismiss="modal">OK</button>
+</div>

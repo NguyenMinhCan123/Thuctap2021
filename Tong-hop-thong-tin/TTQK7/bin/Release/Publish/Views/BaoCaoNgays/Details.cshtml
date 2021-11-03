@@ -1,0 +1,51 @@
+﻿@model TTQK7.BaoCaoNgay
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BaoCaoNgay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiBaoCao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiBaoCao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayBaoCao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayBaoCao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonViID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonViID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GhiChu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BaoCaoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

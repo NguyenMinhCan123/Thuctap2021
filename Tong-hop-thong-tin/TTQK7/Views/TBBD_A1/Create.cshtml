@@ -1,0 +1,87 @@
+﻿@model TTQK7.TBBD_A1
+
+@{
+    ViewBag.Title = "Báo cáo ngày";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()    
+    <div class="form-horizontal">
+        <div class="form-group" style="padding-top:10px">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save"></i> Lưu thông tin
+                </button>                
+            </div>
+        </div>  
+          
+        <hr style="margin-bottom:10px; margin-top:10px"/>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input type="hidden" id="BaoCaoID" name="BaoCaoID" value="@ViewBag.BaoCaoID">
+        <h4>1.Thông báo báo động</h4>
+        <div class="form-group">                
+            <label class="control-label col-md-2">Canh BTTM/đứt</label>
+            <div class="col-md-4" style="padding-right: 4px;">
+                <div class="col-md-6" style="padding-right: 2px;padding-left:0px">
+                    @Html.EditorFor(model => model.CanhBTTM, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanhBTTM, "", new { @class = "text-danger" })
+                </div>
+                <label class="col-md-1 control-label" style="padding-right: 2px;padding-left:2px; text-align:center">/</label>
+                <div class="col-md-5" style="padding-right: 0px; padding-left:2px">
+                    @Html.EditorFor(model => model.CanhBTTM_Dut, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanhBTTM_Dut, "", new { @class = "text-danger" })
+                </div>
+            </div>            
+            <label class="control-label col-md-2" style="padding-right: 4px; padding-left:4px">Canh QK/đứt</label>
+            <div class="col-md-4" style="padding-right: 4px;padding-left:4px;">
+                <div class="col-md-6" style="padding-right: 2px;padding-left:0px">
+                    @Html.EditorFor(model => model.CanhQK, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanhQK, "", new { @class = "text-danger" })
+                </div>
+                <label class="col-md-1 control-label" style="padding-right: 2px;padding-left:2px; text-align:center">/</label>
+                <div class="col-md-5" style="padding-right: 0px; padding-left:2px">
+                    @Html.EditorFor(model => model.CanhQK_Dut, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanhQK_Dut, "", new { @class = "text-danger" })
+                </div>
+            </div>             
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Lần phát chuẩn</label>
+            <div class="col-md-1" style="padding-right:4px;">
+                @Html.EditorFor(model => model.Lanphatchuan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Lanphatchuan, "", new { @class = "text-danger" })
+            </div>
+            <label class="control-label col-md-2" style="padding-right: 4px; padding-left:4px">Thu t/hiệu bộ</label>
+            <div class="col-md-1" style="padding-right: 4px; padding-left:4px">
+                @Html.EditorFor(model => model.ThuTinHieuBo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThuTinHieuBo, "", new { @class = "text-danger" })
+            </div>
+
+            <label class="control-label col-md-2" style="padding-right: 4px; padding-left:4px">Thu t/hiệu QK</label>
+            <div class="col-md-1" style="padding-right: 4px; padding-left:4px">
+                @Html.EditorFor(model => model.ThuTinHieuQK, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThuTinHieuQK, "", new { @class = "text-danger" })
+            </div>
+            <label class="control-label col-md-2" style="padding-right: 4px; padding-left:4px">QK phát t/hiệu</label>
+            <div class="col-md-1" style="padding-right: 4px; padding-left:4px">
+                @Html.EditorFor(model => model.QKPhatTinHieu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.QKPhatTinHieu, "", new { @class = "text-danger" })
+            </div>                              
+        </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Ghi chú</label>
+                <div class="col-md-10" style="padding-right: 4px">
+                    @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control", @style ="max-width:100%" } })
+                    @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            </div>
+            }
+
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+            }

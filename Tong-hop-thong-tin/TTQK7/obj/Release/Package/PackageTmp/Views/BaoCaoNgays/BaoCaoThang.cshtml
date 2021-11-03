@@ -1,0 +1,54 @@
+﻿@model TTQK7.tblMail
+
+@{
+    ViewBag.Title = "Xuất Excel báo cáo tháng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <p class="page-header thongtinchung">
+            Xuất Excel báo cáo tháng
+        </p>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+@using (Html.BeginForm("BaoCaoThang", "BaoCaoNgays", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row">
+            <div class="form-group" style="text-align:center"> 
+                <label class="control-label col-md-2">Tháng:</label>
+                <div class="col-md-4">
+                    @Html.DropDownList("valDonVi", new SelectList(ViewBag.DonVi, "DonViID", "TenDonVi"), new { @class = "form-control" })
+                </div>
+                              
+                <label class="control-label col-md-1">Tháng:</label>
+                <div class="col-md-2">
+                    <input class="form-control" id="valThang" name="valThang" type="number" value="" style="max-width:100px" required >
+                </div>
+
+                <label class="control-label col-md-1">Năm:</label>
+                <div class="col-md-2">
+                    <input class="form-control" id="valNam" name="valNam" type="number" value="" style="max-width:100px" required >
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fa fa-file-excel-o"></i> Xuất Excel
+                    </button>
+                </div>
+            </div>
+        </div>              
+    </div>
+}
+

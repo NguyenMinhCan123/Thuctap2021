@@ -1,0 +1,56 @@
+﻿@model TTQK7.TrucBan
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">Sửa thông tin trực ban</h4>
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="modal-body">
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.TrucBanID)
+            @Html.HiddenFor(model => model.DonViID)
+
+            <div class="form-group">
+                <label class="control-label col-md-3">Trực ban trưởng</label>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.TrucBanTruong, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TrucBanTruong, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-3">Trực ban phó</label>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.TrucBanPho, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TrucBanPho, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-3">Ngày trực</label>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.NgayTruc,new { htmlAttributes = new{ @class = "form-control", @Value = Model.NgayTruc.Value.Date.ToString("dd/MM/yyyy")} })
+                    @Html.ValidationMessageFor(model => model.NgayTruc, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" style="margin-bottom:0px;">
+                    <i class="fa fa-ban"></i> Hủy
+                </button>
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> Lưu thông tin
+                </button>
+            </div>
+        </div>
+        </div>
+        }
+      

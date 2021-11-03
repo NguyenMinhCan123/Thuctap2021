@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phòng TT Quân khu 7</title>
+    <!-- Bootstrap -->
+    <link href="@Url.Content("~/vendors/forlogin/bootstrap.min.css")" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="@Url.Content("~/vendors/font-awesome/css/font-awesome.min.css")" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="@Url.Content("~/vendors/forlogin/custom.min.css")" rel="stylesheet">
+</head>
+<body class="login">    
+    <div>
+        <!-- content starts here -->
+        @RenderBody()
+        <!-- content ends here -->
+    </div>
+    <!-- jQuery -->
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Bootstrap -->
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <!-- Custom Theme Scripts -->
+    <script src="@Url.Content("~/Scripts/dai_duong_custom.js")"></script>
+    <script src="@Url.Content("~/Scripts/thanh_utilities.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.datepicker-vi.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.inputmask.bundle.js")"></script>
+    <script src="@Url.Content("~/Scripts/waitingAjax.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
