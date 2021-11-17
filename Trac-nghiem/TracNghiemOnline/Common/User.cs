@@ -17,7 +17,7 @@ namespace TracNghiemOnline.Common
         public int TESTCODE { get; set; } = 0;
         public string TIME { get; set; }
 
-        public User ()
+        public User()
         {
             try
             {
@@ -30,7 +30,8 @@ namespace TracNghiemOnline.Common
                 NAME = (string)HttpContext.Current.Session[UserSession.NAME];
                 TESTCODE = (int)HttpContext.Current.Session[UserSession.TESTCODE];
                 TIME = (string)HttpContext.Current.Session[UserSession.TIME];
-            } catch(Exception) { }
+            }
+            catch (Exception) { }
         }
         public bool IsLogin()
         {
@@ -39,7 +40,8 @@ namespace TracNghiemOnline.Common
                 if (ISLOGIN)
                     return true;
                 return false;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }
@@ -55,7 +57,8 @@ namespace TracNghiemOnline.Common
                 if (ISLOGIN && PERMISSION == 1)
                     return true;
                 return false;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }
@@ -91,7 +94,12 @@ namespace TracNghiemOnline.Common
             try
             {
                 if (ISLOGIN && PERMISSION == 3 && TESTCODE > 0)
+                {
+                    //TESTCODE = 1;
+                    //if (TESTCODE > 0) { return true; }
                     return true;
+                }
+
                 return false;
             }
             catch (Exception)

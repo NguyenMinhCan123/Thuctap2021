@@ -7,7 +7,12 @@ using System.Web;
 using System.Web.Mvc;
 using TracNghiemOnline.Models;
 using TracNghiemOnline.Common;
-
+using OfficeOpenXml.Core.ExcelPackage;
+using ExcelDataReader;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.OleDb;
+using System.Configuration;
 
 namespace TracNghiemOnline.Controllers
 {
@@ -52,8 +57,8 @@ namespace TracNghiemOnline.Controllers
             //string email = form["email"];
             //string gender = form["gender"];
             //string birthday = form["birthday"];
-            bool add = Model.AddAdmin(name,username,password);
-            if(add)
+            bool add = Model.AddAdmin(name, username, password);
+            if (add)
             {
                 TempData["status_id"] = true;
                 TempData["status"] = "Thêm Thành Công";
@@ -103,7 +108,7 @@ namespace TracNghiemOnline.Controllers
                     TempData["status"] += id_admin.ToString() + ",";
                 }
             }
-            if((bool)TempData["status_id"])
+            if ((bool)TempData["status_id"])
             {
                 TempData["status"] = "Xóa Thành Công";
             }
@@ -119,7 +124,8 @@ namespace TracNghiemOnline.Controllers
                 admin admin = Model.GetAdmin(id_admin);
                 Model.UpdateLastSeen("Sửa Admin " + admin.name, Url.Action("EditAdmin/" + id));
                 return View(admin);
-            } catch(Exception)
+            }
+            catch (Exception)
             {
                 return View("Error");
             }
@@ -147,7 +153,7 @@ namespace TracNghiemOnline.Controllers
                 TempData["status_id"] = false;
                 TempData["status"] = "Sửa Thất Bại";
             }
-            return RedirectToAction("EditAdmin/"+id_admin);
+            return RedirectToAction("EditAdmin/" + id_admin);
         }
         public ActionResult TeacherManager()
         {
@@ -354,7 +360,7 @@ namespace TracNghiemOnline.Controllers
                 Model.UpdateLastSeen("Sửa Sinh Viên " + student.name, Url.Action("EditStudent/" + id));
                 ViewBag.ListSpecialities = Model.GetSpecialities();
                 ViewBag.ListClass = Model.GetClasses();
-             
+
                 return View(student);
             }
             catch (Exception)
@@ -388,11 +394,11 @@ namespace TracNghiemOnline.Controllers
             return RedirectToAction("EditStudent/" + id_student);
         }
         //THÊM PHẦN NHẬP ĐIỂM CHO THÍ SINH
-        public ActionResult EditStudentScore(string id_class,string test_code )
+        public ActionResult EditStudentScore(string id_class, string test_code)
         {
             if (!user.IsAdmin())
                 return View("Error");
-            
+
             try
             {
                 int id_lop = Convert.ToInt32(id_class);
@@ -422,18 +428,18 @@ namespace TracNghiemOnline.Controllers
             TempData["status"] = "Sửa Thất Bại các thí sinh:";
             foreach (StudentViewModel item in liststudent)
             {
-                
+
                 string diem = "d_" + item.student.id_student;
-              
+
                 float diem_thi = (float)Convert.ToDouble(form[diem]);
-                 edit = Model.EditStudentScore(item.student.id_student, test_code, diem_thi);// 
-                if (edit==false)
+                edit = Model.EditStudentScore(item.student.id_student, test_code, diem_thi);// 
+                if (edit == false)
                 {
-                    TempData["status"] += item.student.id_student.ToString()+",";
+                    TempData["status"] += item.student.id_student.ToString() + ",";
                 }
             }
-            
-            
+
+
             return RedirectToAction("StudentManager");
         }
         [HttpPost]
@@ -442,17 +448,17 @@ namespace TracNghiemOnline.Controllers
             if (!user.IsAdmin())
                 return View("Error");
             Model.UpdateLastSeen("Nhập điểm", Url.Action("EditStudentScore"));
-           
+
             int id_speciality = Convert.ToInt32(form["id_speciality"]);
             int id_class = Convert.ToInt32(form["id_class"]);
             int test_code = Convert.ToInt32(form["test_code"]);
-            
+
             return RedirectToAction("EditStudentScore", new
             {
 
                 id_class = id_class,
                 test_code = test_code
-                           });
+            });
         }
         public ActionResult PrintBienBan(FormCollection form)
         {
@@ -463,7 +469,7 @@ namespace TracNghiemOnline.Controllers
             string name = form["name"];
             int id_student = Convert.ToInt32(form["id_student"]);
             int test_code = Convert.ToInt32(form["test_code"]);
-                  
+
             return RedirectToAction("Inbienban", new
             {
                 tengiaovien = name,
@@ -829,6 +835,142 @@ namespace TracNghiemOnline.Controllers
             ViewBag.ListUnits = Model.GetUnits();
             return View(Model.GetQuestions());
         }
+
+        [HttpGet]
+        public ActionResult AddQuestionsFromExcel()
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                bool addTableToDB = false;
+                dt = (DataTable)Session["tmpdata"];
+
+                if (dt != null)
+                {
+                    addTableToDB = true;
+                    if (addTableToDB)
+                    {
+                        TempData["status_id"] = true;
+                        TempData["status"] = "Thêm Thành Công";
+                        Session["tmpdata"] = null;
+                        //return RedirectToAction("QuestionManager");
+                    }
+                    else
+                    {
+                        TempData["status_id"] = false;
+                        TempData["status"] = "Thêm Thất Bại";
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                TempData["status_id"] = false;
+                TempData["status"] = "Load dữ liệu Thất Bại";
+            }
+
+            return View(dt);
+        }
+        [HttpPost]
+        public ActionResult AddQuestionsFromExcel(HttpPostedFileBase upload)
+        {
+
+            if (!user.IsAdmin())
+                return View("Error");
+            if (ModelState.IsValid)
+            {
+
+                if (upload != null && upload.ContentLength > 0)
+                {
+
+                    Stream stream = upload.InputStream;
+
+                    IExcelDataReader reader = null;
+
+
+                    if (upload.FileName.EndsWith(".xls"))
+                    {
+                        reader = ExcelReaderFactory.CreateBinaryReader(stream);
+                    }
+                    else if (upload.FileName.EndsWith(".xlsx"))
+                    {
+                        reader = ExcelReaderFactory.CreateOpenXmlReader(stream);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("File", "This file format is not supported");
+                        return View();
+                    }
+                    //int fieldcount = reader.FieldCount;
+                    //int rowcount = reader.RowCount;
+                    DataTable dt = new DataTable();
+                    DataRow row;
+                    DataTable dt_ = new DataTable();
+                    bool addTableToDB = false;
+                    try
+                    {
+                        dt_ = reader.AsDataSet().Tables[0];
+                        for (int i = 0; i < dt_.Columns.Count - 3; i++)
+                        {
+                            dt.Columns.Add(dt_.Rows[0][i].ToString());
+                        }
+                        int rowcounter = 0;
+                        for (int row_ = 1; row_ < dt_.Rows.Count; row_++)
+                        {
+                            row = dt.NewRow();
+
+                            for (int col = 0; col < dt_.Columns.Count - 3; col++)
+                            {
+                                row[col] = dt_.Rows[row_][col].ToString();
+                                rowcounter++;
+
+                            }
+                            addTableToDB = Model.AddQuestion(Convert.ToInt32(dt_.Rows[row_][0].ToString()), dt_.Rows[row_][1].ToString(), dt_.Rows[row_][3].ToString(), dt_.Rows[row_][2].ToString(), dt_.Rows[row_][4].ToString(), dt_.Rows[row_][5].ToString(), dt_.Rows[row_][6].ToString(), dt_.Rows[row_][7].ToString(), dt_.Rows[row_][8].ToString());
+                            dt.Rows.Add(row);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("File", "Unable to Upload file!");
+                        return View();
+                    }
+
+                    DataSet result = new DataSet();
+                    result.Tables.Add(dt);
+                    reader.Close();
+                    reader.Dispose();
+                    DataTable tmp = result.Tables[0];
+                    Session["tmpdata"] = tmp;
+
+                    //if (addTableToDB)
+                    //{
+                    //    TempData["status_id"] = true;
+                    //    TempData["status"] = "Thêm Thành Công";
+                    //    Session["tmpdata"] = null;
+                    //    return RedirectToAction("QuestionManager");
+                    //}
+                    //else
+                    //{
+                    //    TempData["status_id"] = false;
+                    //    TempData["status"] = "Thêm Thất Bại";
+                    //}
+
+                    //return RedirectToAction("QuestionManager");
+                    return RedirectToAction("AddQuestionsFromExcel");
+                }
+                else
+                {
+                    ModelState.AddModelError("File", "Please Upload Your file");
+                }
+            }
+            return View();
+        }
+
+
+
+
         [HttpPost]
         public ActionResult AddQuestion(FormCollection form, HttpPostedFileBase File)
         {
@@ -836,7 +978,7 @@ namespace TracNghiemOnline.Controllers
                 return View("Error");
             Model.UpdateLastSeen("Thêm Câu Hỏi", Url.Action("AddQuestion"));
             int id_subject = Convert.ToInt32(form["id_subject"]);
-            string unit =  form["unit"];
+            string unit = form["unit"];
             string content = form["content"];
             string[] answer = new string[] {
                 form["answer_a"],
@@ -876,7 +1018,8 @@ namespace TracNghiemOnline.Controllers
                     File.SaveAs(path + img_content);
                 }
 
-            } catch (Exception) { }
+            }
+            catch (Exception) { }
             bool add = Model.AddQuestion(id_subject, unit, content, img_content, answer_a, answer_b, answer_c, answer_d, correct_answer);
             if (add)
             {
@@ -889,6 +1032,20 @@ namespace TracNghiemOnline.Controllers
                 TempData["status"] = "Thêm Thất Bại";
             }
             return RedirectToAction("QuestionManager");
+        }
+
+        [HttpPost]
+        public ActionResult FilterQuestionBySubject(FormCollection form)
+        {
+            if (!user.IsAdmin())
+            {
+                return View("Error");
+            }
+            int id_subject = Convert.ToInt32(form["id_subject"]);
+            List<question> list_questions = Model.FilterQuestion(id_subject);
+
+            return View(list_questions);
+
         }
         public ActionResult DeleteQuestion(string id)
         {
@@ -974,7 +1131,7 @@ namespace TracNghiemOnline.Controllers
             string answer_c = answer[2];
             string answer_d = answer[3];
             string correct_answer = form["correct_answer"];
-            bool active_q =Convert.ToBoolean( form["active"]);
+            bool active_q = Convert.ToBoolean(form["active"]);
             string active_d = answer[0];
             string active_s = answer[1];
             string img_content = "noimage.png";
@@ -1005,7 +1162,7 @@ namespace TracNghiemOnline.Controllers
 
             }
             catch (Exception) { }
-            bool edit = Model.EditQuestion(id_question, id_subject, unit, content, img_content, answer_a, answer_b, answer_c, answer_d, correct_answer,active_q);
+            bool edit = Model.EditQuestion(id_question, id_subject, unit, content, img_content, answer_a, answer_b, answer_c, answer_d, correct_answer, active_q);
             if (edit)
             {
                 TempData["status_id"] = true;
@@ -1040,12 +1197,12 @@ namespace TracNghiemOnline.Controllers
             string password = Common.Encryptor.MD5Hash(form["password"]);
             //sinh số test code ngẫu nhiên
             Random rnd = new Random();
-            int test_code = rnd.Next(111111,999999);
+            int test_code = rnd.Next(111111, 999999);
             int id_subject = Convert.ToInt32(form["id_subject"]);
             int total_question = Convert.ToInt32(form["total_question"]);
             int time_to_do = Convert.ToInt32(form["time_to_do"]);
             string note = "";
-            if (form["note"]!="")
+            if (form["note"] != "")
                 note = form["note"];
             bool add = Model.AddTest(test_name, password, test_code, id_subject, total_question, time_to_do, note);
             if (add)
@@ -1060,7 +1217,7 @@ namespace TracNghiemOnline.Controllers
                     List<question> list_question = Model.GetQuestionsByUnit(id_subject, unit.Unit, quest_of_unit);
                     foreach (question item in list_question)
                     {
-                        Model.AddQuestionsToTest(test_code,item.id_question);
+                        Model.AddQuestionsToTest(test_code, item.id_question);
                     }
                 }
             }
@@ -1145,7 +1302,7 @@ namespace TracNghiemOnline.Controllers
             }
         }
 
-       
+
         public FileResult TestPrint(int test_code)
         {
             WordExportHelper uni = new WordExportHelper();
@@ -1169,5 +1326,6 @@ namespace TracNghiemOnline.Controllers
             ViewBag.total = list.Count;
             return View(list);
         }
+
     }
 }

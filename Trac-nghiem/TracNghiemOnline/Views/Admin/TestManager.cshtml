@@ -21,24 +21,24 @@
     <a class="btn btn-info modal-trigger" href="#addnew">Thêm bài thi</a>
 </p>
 <div class="content row col s12">
-        <table class="striped centered" id="subjects-table">
-            <thead>
-                <tr>
-                    <th>Tên</th>
-                    <th>Mã Đề</th>
-                    <th>Môn</th>
-                    <th>Thông Tin</th>
-                    <th>Trạng Thái</th>
-                    <th>
-                        <i class="material-icons" id="icon-settings">settings</i>
-                        <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
-                    </th>
-                </tr>
-            </thead>
+    <table class="striped centered" id="subjects-table">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Mã Đề</th>
+                <th>Môn</th>
+                <th>Thông Tin</th>
+                <th>Trạng Thái</th>
+                <th>
+                    <i class="material-icons" id="icon-settings">settings</i>
+                    <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
+                </th>
+            </tr>
+        </thead>
 
-            <tbody>
-                @foreach (var item in List)
-                {
+        <tbody>
+            @foreach (var item in List)
+            {
                 <tr>
                     <td>@item.test.test_name</td>
                     <td>@item.test.test_code</td>
@@ -47,27 +47,33 @@
                     <td>@item.status.status_name</td>
                     <td>
                         <a href="@Url.Action("EditTest/" + item.test.test_code)"><i class="material-icons">edit</i></a><br />
-                        @if (item.status.id_status == 1)
+                        @if (item.status.id_status == 3)
                         {
-                            <a href="@Url.Action("ToggleStatus/" + item.test.test_code)"><b>Mở</b>/Đóng</a><br />}
+                            <a href="@Url.Action("ToggleStatus/" + item.test.test_code)"><b>Mở</b>/Đóng</a><br />
+                            <a href="@Url.Action("TestDetail/" + item.test.test_code)">Chi tiết đề thi</a><br />
+
+                            <a href="@Url.Action("TestPrint","Admin",new { test_code = item.test.test_code})">In đề thi</a><br />
+
+                            <a href="@Url.Action("Preview/" + item.test.test_code)">Xem điểm</a>
+                        }
                         else
                         {
                             <a href="@Url.Action("ToggleStatus/" + item.test.test_code)">Mở/<b>Đóng</b></a><br />
                         }
-                        <a href="@Url.Action("TestDetail/" + item.test.test_code)">Chi tiết đề thi</a><br />
+                        @*<a href="@Url.Action("TestDetail/" + item.test.test_code)">Chi tiết đề thi</a><br />
 
-                        <a href="@Url.Action("TestPrint","Admin",new { test_code = item.test.test_code})">In đề thi</a><br />
+                            <a href="@Url.Action("TestPrint","Admin",new { test_code = item.test.test_code})">In đề thi</a><br />
 
-                        <a href="@Url.Action("Preview/" + item.test.test_code)">Xem điểm</a>
+                            <a href="@Url.Action("Preview/" + item.test.test_code)">Xem điểm</a>*@
                     </td>
                 </tr>
-                }
-            </tbody>
-        </table>
+            }
+        </tbody>
+    </table>
 </div>
 <div id="addnew" class="modal">
     <div class="row" style="padding-top: 10px">
-         
+
         <div id="add_normal" class="col s12">
             @using (Html.BeginForm("AddTest", "Admin", FormMethod.Post))
             {
@@ -107,7 +113,7 @@
                 <button type="submit" class="btn full-width" id="add-test" name="add-test">Thêm</button>
             }
         </div>
-        
+
     </div>
 </div>
 <script>
@@ -134,7 +140,7 @@
     function get_units(id) {
         var list = $('#list-unit');
         list.empty();
-        var url = "/Admin/GetJsonUnits/"+ id;
+        var url = "/Admin/GetJsonUnits/" + id;
         var success = function (result) {
             if (result.length <= 0) {
                 var item = '<div class="input-field"><input type="text" disabled value="Môn này hiện chưa có câu hỏi nào"></div>';

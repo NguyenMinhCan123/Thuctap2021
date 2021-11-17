@@ -54,9 +54,11 @@
                         {
                             <a href="@Url.Action("ToggleStatus/" + item.test.test_code)">Mở/<b>Đóng</b></a><br />
                         }
-                        <a href="@Url.Action("TestDetail/" + item.test.test_code)">Chi tiết đề thi</a><br/>
+                        <a href="@Url.Action("TestDetail/" + item.test.test_code)">Chi tiết đề thi</a><br />
 
-                        <a href="@Url.Action("TestPrint","Admin",new { test_code = item.test.test_code})">In đề thi</a>
+                        <a href="@Url.Action("TestPrint","Admin",new { test_code = item.test.test_code})">In đề thi</a><br />
+
+                        <a href="@Url.Action("Preview/" + item.test.test_code)">Xem điểm</a>
                     </td>
                 </tr>
                 }

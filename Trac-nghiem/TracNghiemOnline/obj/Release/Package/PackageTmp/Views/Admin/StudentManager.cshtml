@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
     var List = Model as List<StudentViewModel>;
     var ListClass = ViewBag.ListClass;
+    var ListStudent = ViewBag.ListStudent;
     var ListSpecialities = ViewBag.ListSpecialities as List<speciality>;
     var ListTest = ViewBag.ListTest;
 }
@@ -22,6 +23,7 @@
 <p>
     <a class="btn btn-info modal-trigger" href="#addnew">Thêm thí sinh</a>
     <a class="btn btn-info modal-trigger" href="#editscore">Nhập điểm tác phong</a>
+     
 </p>
 <div class="content row col s12">
     @using (Html.BeginForm("DeleteStudent", "Admin", FormMethod.Post))
@@ -80,6 +82,7 @@
                         <td>
                             <a href="@Url.Action("EditStudent/" + item.student.id_student)"><i class="material-icons">edit</i></a>
                             <a class="modal-trigger" href="#delete-@item.student.id_student"><i class="material-icons">delete</i></a>
+                            
                         </td>
                     </tr>
                     <!-- Modal Structure -->
@@ -170,6 +173,44 @@
                 
                 <button type="submit" class="btn full-width" id="add-student" name="add-student">Nhập điểm</button>
                   
+            }
+        </div>
+
+    </div>
+</div>
+<div id="printbienban" class="modal">
+    <div class="row" style="padding-top: 10px">
+        <div id="add_normal" class="col s12">
+            @using (Html.BeginForm("PrintBienBan", "Admin", FormMethod.Post))
+            {
+                <div class="input-field">
+                    <label for="name">Tên giáo viên <span class="failed">(*)</span></label>
+                    <input type="text" id="name" name="name" onchange="" required>
+                </div>
+                
+                <div class="input-field">
+                    <select name="id_student" id="id_student" required>
+                        <option disabled selected>Chọn</option>
+                        @foreach (var item in ListStudent)
+                        {
+                            <option value="@item.student.id_student">@item.student.name</option>
+                        }
+                    </select>
+                    <label>Tên thí sinh<span class="failed">(*)</span></label>
+                </div>
+                <div class="input-field">
+                    <select name="test_code" id="test_code" required>
+                        <option disabled selected>Chọn</option>
+                        @foreach (var item in ListTest)
+                        {
+                            <option value="@item.test.test_code">@item.test.test_name</option>
+                        }
+                    </select>
+                    <label>Bài thi<span class="failed">(*)</span></label>
+                </div>
+
+                <button type="submit" class="btn full-width" id="add-student" name="add-student">In biên bản</button>
+
             }
         </div>
 
