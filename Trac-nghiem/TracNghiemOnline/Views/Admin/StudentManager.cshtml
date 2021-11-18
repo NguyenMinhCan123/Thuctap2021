@@ -7,6 +7,7 @@
     var ListStudent = ViewBag.ListStudent;
     var ListSpecialities = ViewBag.ListSpecialities as List<speciality>;
     var ListTest = ViewBag.ListTest;
+    var ListScore = ViewBag.ListScore;
 }
 
 <div class="title-content">
@@ -23,82 +24,149 @@
 <p>
     <a class="btn btn-info modal-trigger" href="#addnew">Thêm thí sinh</a>
     <a class="btn btn-info modal-trigger" href="#editscore">Nhập điểm tác phong</a>
-     
+    <a class="btn btn-info modal-trigger" href="#filterByClasses">Thống kê điểm theo lớp</a>
 </p>
 <div class="content row col s12">
     @using (Html.BeginForm("DeleteStudent", "Admin", FormMethod.Post))
     {
-        <table class="striped centered" id="students-table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Tài Khoản</th>
-                    <th>Tên</th>
-                    <th>Lớp</th>
-                    <th>Thông Tin</th>
-                    <th>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="checked-all" />
-                                <span></span>
-                            </label>
-                        </p>
-                    </th>
-                    <th>
-                        <i class="material-icons" id="icon-settings">settings</i>
-                        <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
-                    </th>
-                </tr>
-            </thead>
 
-            <tbody>
-                @foreach (var item in List)
-                {
+        if (ListScore != null)
+        {
+            <table class="striped centered" id="students-table">
+                <thead>
                     <tr>
-                        <td>@item.student.id_student</td>
-                        <td>@item.student.username</td>
-                        <td>@item.student.name</td>
-                        <td>Lớp @item.Class.class_name <br />Ngành @item.speciality.speciality_name</td>
-                        <td>
-                            @if (item.student.last_seen == null)
-                            {
-                                <span>Chưa từng online</span>
-                            }
-                            else
-                            {
-                                <span>Online lần cuối lúc</span><br />
-                                @String.Format("{0:dd'-'MM'-'yyyy HH':'mm':'ss}", item.student.last_login) <br /><span>tại</span>
-                                <a href="@item.student.last_seen_url">@item.student.last_seen</a>
-                            }
-                        </td>
-                        <td>
+                        <th>ID</th>
+                        <th>Tài Khoản</th>
+                        <th>Tên</th>
+                        <th>Lớp</th>
+                        <th>Thông Tin</th>
+                        <th>
                             <p>
                                 <label>
-                                    <input type="checkbox" class="checkbox" name="checkbox" value="@item.student.id_student" onchange="check_box()" />
+                                    <input type="checkbox" id="checked-all" />
                                     <span></span>
                                 </label>
                             </p>
-                        </td>
-                        <td>
-                            <a href="@Url.Action("EditStudent/" + item.student.id_student)"><i class="material-icons">edit</i></a>
-                            <a class="modal-trigger" href="#delete-@item.student.id_student"><i class="material-icons">delete</i></a>
-                            
-                        </td>
+                        </th>
+                        <th>
+                            <i class="material-icons" id="icon-settings">settings</i>
+                            <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
+                        </th>
                     </tr>
-                    <!-- Modal Structure -->
-                    <div id="delete-@item.student.id_student" class="modal">
-                        <div class="modal-content">
-                            <h4>Xác Nhận</h4>
-                            <p>Bạn có xóa tài khoản @item.student.name</p>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in ListScore)
+                    {
+                        <tr>
+                            <td>@item.student.id_student</td>
+                            <td>@item.student.username</td>
+                            <td>@item.student.name</td>
+                            <td>Lớp @(item.student.@class.class_name) <br />Ngành @(item.student.speciality.speciality_name)</td>
+                            <td>
+                                @item.score_number
+                            </td>
+                            <td>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="checkbox" value="@item.student.id_student" onchange="check_box()" />
+                                        <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                            <td>
+                                <a href="@Url.Action("EditStudent/" + item.student.id_student)"><i class="material-icons">edit</i></a>
+                                <a class="modal-trigger" href="#delete-@item.student.id_student"><i class="material-icons">delete</i></a>
+
+                            </td>
+                        </tr>
+                        <!-- Modal Structure -->
+                        <div id="delete-@item.student.id_student" class="modal">
+                            <div class="modal-content">
+                                <h4>Xác Nhận</h4>
+                                <p>Bạn có xóa tài khoản @item.student.name</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="modal-close waves-effect waves-green btn-flat">Hủy</a>
+                                <a href="@Url.Action("DeleteStudent/" + item.student.id_student)" class="modal-close waves-effect waves-green btn-flat">Có</a>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <a href="#" class="modal-close waves-effect waves-green btn-flat">Hủy</a>
-                            <a href="@Url.Action("DeleteStudent/" + item.student.id_student)" class="modal-close waves-effect waves-green btn-flat">Có</a>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <table class="striped centered" id="students-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tài Khoản</th>
+                        <th>Tên</th>
+                        <th>Lớp</th>
+                        <th>Thông Tin</th>
+                        <th>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="checked-all" />
+                                    <span></span>
+                                </label>
+                            </p>
+                        </th>
+                        <th>
+                            <i class="material-icons" id="icon-settings">settings</i>
+                            <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in List)
+                    {
+                        <tr>
+                            <td>@item.student.id_student</td>
+                            <td>@item.student.username</td>
+                            <td>@item.student.name</td>
+                            <td>Lớp @item.Class.class_name <br />Ngành @item.speciality.speciality_name</td>
+                            <td>
+                                @if (item.student.last_seen == null)
+                                {
+                                    <span>Chưa từng online</span> }
+                                else
+                                {
+                                    <span>Online lần cuối lúc</span><br />
+                                    @String.Format("{0:dd'-'MM'-'yyyy HH':'mm':'ss}", item.student.last_login) <br /><span>tại</span>
+                                    <a href="@item.student.last_seen_url">@item.student.last_seen</a>}
+                            </td>
+                            <td>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="checkbox" value="@item.student.id_student" onchange="check_box()" />
+                                        <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                            <td>
+                                <a href="@Url.Action("EditStudent/" + item.student.id_student)"><i class="material-icons">edit</i></a>
+                                <a class="modal-trigger" href="#delete-@item.student.id_student"><i class="material-icons">delete</i></a>
+
+                            </td>
+                        </tr>
+                        <!-- Modal Structure -->
+                        <div id="delete-@item.student.id_student" class="modal">
+                            <div class="modal-content">
+                                <h4>Xác Nhận</h4>
+                                <p>Bạn có xóa tài khoản @item.student.name</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="modal-close waves-effect waves-green btn-flat">Hủy</a>
+                                <a href="@Url.Action("DeleteStudent/" + item.student.id_student)" class="modal-close waves-effect waves-green btn-flat">Có</a>
+                            </div>
                         </div>
-                    </div>
-                }
-            </tbody>
-        </table>
+                    }
+                </tbody>
+            </table>
+        }
     }
 </div>
 <div id="addnew" class="modal">
@@ -106,42 +174,42 @@
         <div id="add_normal" class="col s12">
             @using (Html.BeginForm("AddStudent", "Admin", FormMethod.Post))
             {
-                    <div class="input-field">
-                        <label for="name">Tên <span class="failed">(*)</span></label>
-                        <input type="text" id="name" name="name" onchange="" required>
-                    </div>
-                    <div class="input-field">
-                        <label for="username">Tài khoản <span class="failed">(*)</span></label>
-                        <input type="text" name="username" id="username" required>
-                    </div>
-                    <div class="input-field">
-                        <label for="password">Mật khẩu <span class="failed">(*)</span></label>
-                        <input type="password" data-minlength="6" name="password" id="password" required>
-                    </div>
-                    <div class="input-field">
-                        <select name="id_class" id="id_class" required>
-                            <option disabled selected>Chọn</option>
-                            @foreach (var item in ListClass)
-                            {
-                                <option value="@item.id_class">@item.class_name</option>
-                            }
-                        </select>
-                        <label>Lớp<span class="failed">(*)</span></label>
-                    </div>
-                    <div class="input-field">
-                        <select name="id_speciality" id="id_speciality" required>
-                            @foreach (var item in ListSpecialities)
-                            {
-                                <option value="@item.id_speciality">@item.speciality_name</option>
-                            }
-                        </select>
-                        <label>Ngành</label>
-                    </div>                                 
-                    <button type="submit" class="btn full-width" id="add-student" name="add-student">Thêm</button>
-                
+                <div class="input-field">
+                    <label for="name">Tên <span class="failed">(*)</span></label>
+                    <input type="text" id="name" name="name" onchange="" required>
+                </div>
+                <div class="input-field">
+                    <label for="username">Tài khoản <span class="failed">(*)</span></label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Mật khẩu <span class="failed">(*)</span></label>
+                    <input type="password" data-minlength="6" name="password" id="password" required>
+                </div>
+                <div class="input-field">
+                    <select name="id_class" id="id_class" required>
+                        <option disabled selected>Chọn</option>
+                        @foreach (var item in ListClass)
+                        {
+                            <option value="@item.id_class">@item.class_name</option>
+                        }
+                    </select>
+                    <label>Lớp<span class="failed">(*)</span></label>
+                </div>
+                <div class="input-field">
+                    <select name="id_speciality" id="id_speciality" required>
+                        @foreach (var item in ListSpecialities)
+                        {
+                            <option value="@item.id_speciality">@item.speciality_name</option>
+                        }
+                    </select>
+                    <label>Ngành</label>
+                </div>
+                <button type="submit" class="btn full-width" id="add-student" name="add-student">Thêm</button>
+
             }
         </div>
-        
+
     </div>
 </div>
 <div id="editscore" class="modal">
@@ -170,9 +238,9 @@
                     </select>
                     <label>Bài thi<span class="failed">(*)</span></label>
                 </div>
-                
+
                 <button type="submit" class="btn full-width" id="add-student" name="add-student">Nhập điểm</button>
-                  
+
             }
         </div>
 
@@ -187,7 +255,7 @@
                     <label for="name">Tên giáo viên <span class="failed">(*)</span></label>
                     <input type="text" id="name" name="name" onchange="" required>
                 </div>
-                
+
                 <div class="input-field">
                     <select name="id_student" id="id_student" required>
                         <option disabled selected>Chọn</option>
@@ -235,7 +303,7 @@
                 "previous": "Trước"
             }
         }
-       
+
     });
     $('select').select();
     $('#checked-all').on('change', function () {

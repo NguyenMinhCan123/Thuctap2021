@@ -629,7 +629,7 @@ namespace TracNghiemOnline.Models
             List<TestViewModel> tests = (from x in db.tests
                                          join s in db.subjects on x.id_subject equals s.id_subject
                                          join stt in db.statuses on x.id_status equals stt.id_status
-                                         where x.id_status == 1
+                                         where x.id_status == 3
                                          select new TestViewModel { test = x, subject = s, status = stt }).ToList();
             return tests;
         }
@@ -707,21 +707,23 @@ namespace TracNghiemOnline.Models
         }
         public bool ToggleStatus(int id_test)
         {
+            var check_id_test = false;
             try
             {
                 var update = (from x in db.tests where x.test_code == id_test select x).Single();
-                if (update.id_status == 1)
-                    update.id_status = 2;
+                if (update.id_status == 3)
+                    update.id_status = 4;
                 else
-                    update.id_status = 1;
+                    update.id_status = 3;
                 db.SaveChanges();
+                check_id_test = true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
                 return false;
             }
-            return true;
+            return check_id_test;
         }
         public List<question> GetQuestionsByUnit(int id_subject, string unit, int quest_of_unit)
         {
@@ -812,6 +814,11 @@ namespace TracNghiemOnline.Models
                 Console.WriteLine(e);
             }
             return score;
+        }
+        public List<score> FilterScoreByClass(int id_class)
+        {
+            List<score> scores = db.scores.Where(x => x.student.id_class == id_class && x.student.@class.id_class == id_class).ToList();
+            return scores;
         }
 
     }

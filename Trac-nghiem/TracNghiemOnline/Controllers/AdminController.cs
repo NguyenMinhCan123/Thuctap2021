@@ -274,6 +274,10 @@ namespace TracNghiemOnline.Controllers
         {
             if (!user.IsAdmin())
                 return View("Error");
+            if (TempData["list_score"] != null)
+            {
+                ViewBag.ListScore = TempData["list_score"];
+            }
             Model.UpdateLastSeen("Quản Lý Sinh Viên", Url.Action("StudentManager"));
             ViewBag.ListSpecialities = Model.GetSpecialities();
             ViewBag.ListClass = Model.GetClasses();
@@ -1073,16 +1077,19 @@ namespace TracNghiemOnline.Controllers
                 return View("Error");
             Model.UpdateLastSeen("Xóa Câu Hỏi", Url.Action("DeleteQuestion"));
             string[] ids = Regex.Split(form["checkbox"], ",");
-            TempData["status_id"] = true;
+            TempData["status_id"] = false;
             TempData["status"] = "Xóa Thất Bại ID: ";
             foreach (string id in ids)
             {
                 int id_question = Convert.ToInt32(id);
                 bool del = Model.DeleteQuestion(id_question);
-                if (!del)
+                if (del)
+                {
+                    TempData["status_id"] = true;
+                }
+                else
                 {
                     TempData["status_id"] = false;
-                    TempData["status"] += id_question.ToString() + ",";
                 }
             }
             if ((bool)TempData["status_id"])
@@ -1325,6 +1332,21 @@ namespace TracNghiemOnline.Controllers
             ViewBag.test_code = id;
             ViewBag.total = list.Count;
             return View(list);
+        }
+        [HttpPost]
+        public ActionResult FilterScoreByClass(FormCollection form)
+        {
+            if (!user.IsAdmin())
+            {
+                return View("Error");
+            }
+            int id_class = Convert.ToInt32(form["id_class"]);
+
+            List<score> list_score = Model.FilterScoreByClass(id_class);
+
+            TempData["list_score"] = list_score;
+
+            return RedirectToAction("StudentManager");
         }
 
     }
