@@ -277,6 +277,7 @@ namespace TracNghiemOnline.Controllers
             if (TempData["list_score"] != null)
             {
                 ViewBag.ListScore = TempData["list_score"];
+                ViewBag.ListPart = TempData["list_partition"];
             }
             Model.UpdateLastSeen("Quản Lý Sinh Viên", Url.Action("StudentManager"));
             ViewBag.ListSpecialities = Model.GetSpecialities();
@@ -1344,7 +1345,20 @@ namespace TracNghiemOnline.Controllers
 
             List<score> list_score = Model.FilterScoreByClass(id_class);
 
-            TempData["list_score"] = list_score;
+            List<double> partitions = new List<double>();
+
+            var score_numbers = list_score.Select(x => x.score_number).Distinct();
+
+            foreach (var item in score_numbers)
+            {
+                partitions.Add(list_score.Count(x => x.score_number == item));
+            }
+
+            var tmpPartition = partitions;
+
+
+            TempData["list_score"] = score_numbers;
+            TempData["list_partition"] = tmpPartition.ToList();
 
             return RedirectToAction("StudentManager");
         }

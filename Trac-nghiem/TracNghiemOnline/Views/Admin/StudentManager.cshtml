@@ -8,6 +8,7 @@
     var ListSpecialities = ViewBag.ListSpecialities as List<speciality>;
     var ListTest = ViewBag.ListTest;
     var ListScore = ViewBag.ListScore;
+    var ListPart = ViewBag.ListPart;
 }
 
 <div class="title-content">
@@ -32,68 +33,10 @@
 
         if (ListScore != null)
         {
-            <table class="striped centered" id="students-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Tài Khoản</th>
-                        <th>Tên</th>
-                        <th>Lớp</th>
-                        <th>Thông Tin</th>
-                        <th>
-                            <p>
-                                <label>
-                                    <input type="checkbox" id="checked-all" />
-                                    <span></span>
-                                </label>
-                            </p>
-                        </th>
-                        <th>
-                            <i class="material-icons" id="icon-settings">settings</i>
-                            <input type="submit" class="material-icons hidden" value="delete_forever" style="background: none; border: none; cursor: pointer; color: red;" id="icon-delete-all" />
-                        </th>
-                    </tr>
-                </thead>
+            <div id="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
 
-                <tbody>
-                    @foreach (var item in ListScore)
-                    {
-                        <tr>
-                            <td>@item.student.id_student</td>
-                            <td>@item.student.username</td>
-                            <td>@item.student.name</td>
-                            <td>Lớp @(item.student.@class.class_name) <br />Ngành @(item.student.speciality.speciality_name)</td>
-                            <td>
-                                @item.score_number
-                            </td>
-                            <td>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="checkbox" value="@item.student.id_student" onchange="check_box()" />
-                                        <span></span>
-                                    </label>
-                                </p>
-                            </td>
-                            <td>
-                                <a href="@Url.Action("EditStudent/" + item.student.id_student)"><i class="material-icons">edit</i></a>
-                                <a class="modal-trigger" href="#delete-@item.student.id_student"><i class="material-icons">delete</i></a>
-
-                            </td>
-                        </tr>
-                        <!-- Modal Structure -->
-                        <div id="delete-@item.student.id_student" class="modal">
-                            <div class="modal-content">
-                                <h4>Xác Nhận</h4>
-                                <p>Bạn có xóa tài khoản @item.student.name</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="#" class="modal-close waves-effect waves-green btn-flat">Hủy</a>
-                                <a href="@Url.Action("DeleteStudent/" + item.student.id_student)" class="modal-close waves-effect waves-green btn-flat">Có</a>
-                            </div>
-                        </div>
-                    }
-                </tbody>
-            </table>
         }
         else
         {
@@ -212,6 +155,28 @@
 
     </div>
 </div>
+<div id="filterByClasses" class="modal">
+    <div class="row" style="padding-top: 10px">
+
+        <div id="add_normal" class="col s12">
+            @using (Html.BeginForm("FilterScoreByClass", "Admin", FormMethod.Post))
+            {
+                <div class="input-field">
+                    <select name="id_class" id="id_class" onchange="get_units(this.value)" required>
+                        <option disabled selected>Chọn</option>
+                        @foreach (var item in ListClass)
+                        {
+                            <option value="@item.id_class">@item.class_name</option>
+                        }
+                    </select>
+                    <label>Lớp <span class="failed">(*)</span></label>
+                </div>
+                <button type="submit" class="btn full-width" id="add-test" name="filter-test-by-class">Lọc</button>
+            }
+        </div>
+
+    </div>
+</div>
 <div id="editscore" class="modal">
     <div class="row" style="padding-top: 10px">
         <div id="add_normal" class="col s12">
@@ -285,6 +250,9 @@
     </div>
 </div>
 <script>
+    var rawPart = @Html.Raw(Json.Encode(ViewBag.ListPart));
+    var rawListScore = @Html.Raw(Json.Encode(ViewBag.ListScore));
+    var getChartElm = $("#chart");
     $('.tabs').tabs();
     $('.modal').modal();
     $('#students-table').DataTable({
@@ -336,4 +304,39 @@
             $('#icon-delete-all').removeClass('hidden');
         }
     }
+    var renderChart = new Chart(getChartElm, {
+        type: 'bar',
+        data: {
+            labels: rawListScore,
+            datasets: [{
+                label: "Tổng số điểm",
+                data: rawPart,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }],
+
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
 </script>
