@@ -2,7 +2,7 @@
 
 @{
     var list = Model as List<StudentQuestViewModel>;
-    ViewBag.Title = "Làm Bài Thi "+ list.First().test.test_code;
+    //ViewBag.Title = "Làm Bài Thi " + list.test.test_code;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="title-content">
@@ -28,15 +28,15 @@
         }
     </div>
     <div class="testing-right">
-        @{ 
+        @{
             int x = 1;
-            foreach(var item in list)
+            foreach (var item in list)
             {
                 <div id="quest-@x" class="item-quest">
                     <div class="quest-title">Câu @x :</div>
                     <div class="quest-content">
                         <span>@item.question.content</span>
-                         
+
                     </div>
                     <div class="quest-answer">
                         <p>
@@ -96,8 +96,8 @@
                 x = x + 1;
             }
         }
-        
-    <a href="@Url.Action("SubmitTest")" class="btn flat" style="margin-left: 40%;width: 30%;margin-top: 20px;margin-bottom: 10px;" onclick="return confirm('Xác nhận nộp bài?')">Nộp Bài</a>
+
+        <a href="@Url.Action("SubmitTest")" class="btn flat" style="margin-left: 40%;width: 30%;margin-top: 20px;margin-bottom: 10px;" onclick="return confirm('Xác nhận nộp bài?')">Nộp Bài</a>
     </div>
 </div>
 <script>
@@ -126,7 +126,7 @@
                     alert('Hết giờ, hệ thống sẽ tự động nộp bài!');
                     clearInterval(cdID);
                     window.location.replace("@Url.Action("SubmitTest")");
-                    
+
                 }
             }, 1000);
     }
@@ -159,7 +159,7 @@
             $('#timer').css("margin-top", "30px");
         }
     });
-    //jQuery for Page Scroll - Single page      
+    //jQuery for Page Scroll - Single page
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
