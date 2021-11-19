@@ -2,6 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.SqlServer;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -818,6 +821,13 @@ namespace TracNghiemOnline.Models
         public List<score> FilterScoreByClass(int id_class)
         {
             List<score> scores = db.scores.Where(x => x.student.id_class == id_class && x.student.@class.id_class == id_class).ToList();
+            return scores;
+        }
+        public List<score> FilterScoreByDate(String date)
+        {
+
+            //List<score> scores = db.scores.Where(x => DateTime.Compare((DateTime)x.time_finish, DateTime.Parse(date)).ToList();
+            List<score> scores = db.scores.AsEnumerable().Where(x => x.time_finish.Value.Date == DateTime.Parse(date).Date).ToList();
             return scores;
         }
 

@@ -13,6 +13,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.OleDb;
 using System.Configuration;
+using System.Diagnostics;
+using System.Data.Entity;
 
 namespace TracNghiemOnline.Controllers
 {
@@ -1344,6 +1346,35 @@ namespace TracNghiemOnline.Controllers
             int id_class = Convert.ToInt32(form["id_class"]);
 
             List<score> list_score = Model.FilterScoreByClass(id_class);
+
+            List<double> partitions = new List<double>();
+
+            var score_numbers = list_score.Select(x => x.score_number).Distinct();
+
+            foreach (var item in score_numbers)
+            {
+                partitions.Add(list_score.Count(x => x.score_number == item));
+            }
+
+            var tmpPartition = partitions;
+
+
+            TempData["list_score"] = score_numbers;
+            TempData["list_partition"] = tmpPartition.ToList();
+
+            return RedirectToAction("StudentManager");
+        }
+        [HttpPost]
+        public ActionResult FilterScoreByDate(FormCollection form)
+        {
+            if (!user.IsAdmin())
+            {
+                return View("Error");
+            }
+
+            String dateForm = form["date"];
+
+            List<score> list_score = Model.FilterScoreByDate(dateForm);
 
             List<double> partitions = new List<double>();
 
