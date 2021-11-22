@@ -29,7 +29,7 @@
                 <span class="title">Thời gian: <b>@item.test.time_to_do (phút)</b></span><br />
                 <span class="title">Ghi chú: <b>@item.test.note</b></span><br />
                 <span class="title">Trạng thái: <b>@item.status.status_name</b></span><br />
-                @if (item.status.id_status == 1)
+                @if (item.status.id_status == 3)
                 {
                     if (Scores.IndexOf(item.test.test_code) != -1)
                     {
@@ -37,7 +37,9 @@
                     }
                     else
                     {
-                        <a href="#enter-test-@item.test.test_code" class="btn full-width modal-trigger" data-code="@item.test.test_code" id="enter-ex">Làm bài</a>
+                        @*<a href="#enter-test-@item.test.test_code" class="btn full-width modal-trigger" data-code="@item.test.test_code" id="enter-ex">Làm bài</a>*@
+                        @Html.ActionLink("Làm bài", "DoingTest", "Admin", new { @class = "btn full-width modal-trigger", id = "enter-ex" });
+                        @*<a href="/Student/DoingTest/@item.test.test_code" class="btn full-width modal-trigger" data-code="@item.test.test_code" id="enter-ex">Làm bài</a>*@
                     }
                 }
                 else if (item.status.id_status == 2)
@@ -65,7 +67,7 @@
             </div>
         }
     }
-    </div>
+</div>
 <script>
     $('.modal').modal();
 </script>

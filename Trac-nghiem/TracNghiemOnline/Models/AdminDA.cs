@@ -1,5 +1,11 @@
-﻿using System;
+﻿using ExcelDataReader;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.SqlServer;
+using System.IO;
 using System.Linq;
 using System.Web;
 using TracNghiemOnline.Common;
@@ -16,7 +22,7 @@ namespace TracNghiemOnline.Models
             update.last_login = DateTime.Now;
             db.SaveChanges();
         }
-        public void UpdateLastSeen(string name,string url)
+        public void UpdateLastSeen(string name, string url)
         {
             var update = (from x in db.admins where x.id_admin == user.ID select x).Single();
             update.last_seen = name;
@@ -56,12 +62,14 @@ namespace TracNghiemOnline.Models
             try
             {
                 admin = db.admins.SingleOrDefault(x => x.id_admin == id);
-            } catch (Exception e) {
+            }
+            catch (Exception e)
+            {
                 Console.WriteLine(e);
             }
             return admin;
         }
-        public bool AddAdmin(string name ,string username, string password)
+        public bool AddAdmin(string name, string username, string password)
         {
             var admin = new admin();
             admin.name = name;
@@ -74,7 +82,8 @@ namespace TracNghiemOnline.Models
             {
                 db.admins.Add(admin);
                 db.SaveChanges();
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e);
                 return false;
@@ -88,7 +97,8 @@ namespace TracNghiemOnline.Models
                 var delete = (from x in db.admins where x.id_admin == id select x).Single();
                 db.admins.Remove(delete);
                 db.SaveChanges();
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e);
                 return false;
@@ -103,10 +113,11 @@ namespace TracNghiemOnline.Models
                 update.name = name;
                 update.username = username;
                 //update.birthday = Convert.ToDateTime(birthday);
-                if(password != null)
+                if (password != null)
                     update.password = Common.Encryptor.MD5Hash(password);
                 db.SaveChanges();
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e);
                 return false;
@@ -115,7 +126,7 @@ namespace TracNghiemOnline.Models
         }
         public List<TeacherViewModel> GetTeachers()
         {
-            List<TeacherViewModel> teachers = (from x in db.teachers join s in db.specialities on x.id_speciality equals s.id_speciality select new TeacherViewModel{ teacher = x, speciality = s}).ToList();
+            List<TeacherViewModel> teachers = (from x in db.teachers join s in db.specialities on x.id_speciality equals s.id_speciality select new TeacherViewModel { teacher = x, speciality = s }).ToList();
             return teachers;
         }
         public List<speciality> GetSpecialities()
@@ -165,7 +176,8 @@ namespace TracNghiemOnline.Models
             {
                 teacher = db.teachers.SingleOrDefault(x => x.id_teacher == id);
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 Console.WriteLine(e);
             }
             return teacher;
@@ -193,7 +205,7 @@ namespace TracNghiemOnline.Models
         {
             return db.classes.ToList();
         }
-      
+
         public List<StudentViewModel> GetStudents()
         {
             List<StudentViewModel> students = (from x in db.students
@@ -305,10 +317,10 @@ namespace TracNghiemOnline.Models
         public List<ClassViewModel> GetClassesJoin()
         {
             List<ClassViewModel> classes = (from x in db.classes
-                                               join s in db.specialities on x.id_speciality equals s.id_speciality
-                                               join c in db.grades on x.id_grade equals c.id_grade
-                                              
-                                               select new ClassViewModel { Class = x, speciality = s, grade = c }).ToList();
+                                            join s in db.specialities on x.id_speciality equals s.id_speciality
+                                            join c in db.grades on x.id_grade equals c.id_grade
+
+                                            select new ClassViewModel { Class = x, speciality = s, grade = c }).ToList();
             return classes;
         }
         public bool AddGrade(string grade_name)
@@ -519,9 +531,9 @@ namespace TracNghiemOnline.Models
         public List<QuestionViewModel> GetQuestions()
         {
             List<QuestionViewModel> questions = (from x in db.questions
-                                               join s in db.subjects on x.id_subject equals s.id_subject
-                                               orderby x.unit, x.id_question, x.id_subject descending
-                                               select new QuestionViewModel { question = x, subject = s }).ToList();
+                                                 join s in db.subjects on x.id_subject equals s.id_subject
+                                                 orderby x.unit, x.id_question, x.id_subject descending
+                                                 select new QuestionViewModel { question = x, subject = s }).ToList();
             return questions;
         }
         public bool AddQuestion(int id_subject, string unit, string content, string img_content, string answer_a, string answer_b, string answer_c, string answer_d, string correct_answer)
@@ -547,6 +559,12 @@ namespace TracNghiemOnline.Models
                 return false;
             }
             return true;
+        }
+
+        public List<question> FilterQuestion(int subject_id)
+        {
+            List<question> questions = db.questions.Where(x => x.id_subject == subject_id).ToList();
+            return questions;
         }
         public bool DeleteQuestion(int id)
         {
@@ -576,6 +594,7 @@ namespace TracNghiemOnline.Models
             }
             return question;
         }
+
         public bool EditQuestion(int id_question, int id_subject, string unit, string content, string img_content, string answer_a, string answer_b, string answer_c, string answer_d, string correct_answer, bool active)
         {
             try
@@ -603,9 +622,9 @@ namespace TracNghiemOnline.Models
         public List<TestViewModel> Tests()
         {
             List<TestViewModel> tests = (from x in db.tests
-                                                 join s in db.subjects on x.id_subject equals s.id_subject
-                                                 join stt in db.statuses on x.id_status equals stt.id_status
-                                                 select new TestViewModel { test = x, subject = s, status = stt }).ToList();
+                                         join s in db.subjects on x.id_subject equals s.id_subject
+                                         join stt in db.statuses on x.id_status equals stt.id_status
+                                         select new TestViewModel { test = x, subject = s, status = stt }).ToList();
             return tests;
         }
         public List<TestViewModel> TestsActive()
@@ -613,7 +632,7 @@ namespace TracNghiemOnline.Models
             List<TestViewModel> tests = (from x in db.tests
                                          join s in db.subjects on x.id_subject equals s.id_subject
                                          join stt in db.statuses on x.id_status equals stt.id_status
-                                         where x.id_status==1
+                                         where x.id_status == 3
                                          select new TestViewModel { test = x, subject = s, status = stt }).ToList();
             return tests;
         }
@@ -641,7 +660,7 @@ namespace TracNghiemOnline.Models
             test.password = password;
             test.test_code = test_code;
             test.id_subject = id_subject;
-            test.id_status = 2;
+            test.id_status = 3;
             test.total_questions = total_question;
             test.time_to_do = time_to_do;
             test.note = note;
@@ -691,26 +710,28 @@ namespace TracNghiemOnline.Models
         }
         public bool ToggleStatus(int id_test)
         {
+            var check_id_test = false;
             try
             {
                 var update = (from x in db.tests where x.test_code == id_test select x).Single();
-                if (update.id_status == 1)
-                    update.id_status = 2;
+                if (update.id_status == 3)
+                    update.id_status = 4;
                 else
-                update.id_status =  1;
+                    update.id_status = 3;
                 db.SaveChanges();
+                check_id_test = true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
                 return false;
             }
-            return true;
+            return check_id_test;
         }
         public List<question> GetQuestionsByUnit(int id_subject, string unit, int quest_of_unit)
         {
             List<question> q = (from x in db.questions
-                                where x.id_subject == id_subject && x.unit == unit &&x.active==true
+                                where x.id_subject == id_subject && x.unit == unit && x.active == true
                                 select x).OrderBy(x => Guid.NewGuid()).Take(quest_of_unit).ToList();
             return q;
         }
@@ -737,11 +758,11 @@ namespace TracNghiemOnline.Models
                                   where x.test_code == test_code
                                   select x.id_question).ToList();
             List<question> list_quest = new List<question>();
-            foreach(int item in id_quest)
+            foreach (int item in id_quest)
             {
                 question q = (from x in db.questions
-                                    where x.id_question == item
-                                    select x).Single();
+                              where x.id_question == item
+                              select x).Single();
                 list_quest.Add(q);
             }
             return list_quest;
@@ -783,12 +804,12 @@ namespace TracNghiemOnline.Models
         }
         public ScoreViewModel GetScore(int test_code, int idstudent)
         {
-             ScoreViewModel score = new ScoreViewModel();
+            ScoreViewModel score = new ScoreViewModel();
             try
             {
                 score = (from x in db.scores
                          join s in db.students on x.id_student equals s.id_student
-                         where x.test_code == test_code && x.id_student== idstudent
+                         where x.test_code == test_code && x.id_student == idstudent
                          select new ScoreViewModel { score = x, student = s }).First();
             }
             catch (Exception e)
@@ -797,5 +818,18 @@ namespace TracNghiemOnline.Models
             }
             return score;
         }
+        public List<score> FilterScoreByClass(int id_class)
+        {
+            List<score> scores = db.scores.Where(x => x.student.id_class == id_class && x.student.@class.id_class == id_class).ToList();
+            return scores;
+        }
+        public List<score> FilterScoreByDate(String date)
+        {
+
+            //List<score> scores = db.scores.Where(x => DateTime.Compare((DateTime)x.time_finish, DateTime.Parse(date)).ToList();
+            List<score> scores = db.scores.AsEnumerable().Where(x => x.time_finish.Value.Date == DateTime.Parse(date).Date).ToList();
+            return scores;
+        }
+
     }
 }

@@ -20,6 +20,7 @@
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Assets/js/materialize.min.js"></script>
     <script src="~/Assets/DataTables/js/jquery.dataTables.js"></script>
+    <script src="~/Scripts/Chart.min.js"></script>
 </head>
 
 <body class="body-login scrollbar">
@@ -40,6 +41,7 @@
                         <li><a href="@Url.Action("SubjectManager")"><i class="material-icons">collections_bookmark</i>Quản Lý Môn Học</a></li>
                         <li><a href="@Url.Action("QuestionManager")"><i class="material-icons">format_align_left</i>Quản Lý Câu Hỏi</a></li>
                         <li><a href="@Url.Action("TestManager")"><i class="material-icons">event_available</i>Quản Lý Bài Thi</a></li>
+
                         <li class="divider" tabindex="-1"></li>
                         <li><a href="@Url.Action("Logout")">Đăng xuất<i class="material-icons">close</i></a></li>
                     </ul>
@@ -49,7 +51,7 @@
         </nav>
     </div>
 
-        @RenderBody()
+    @RenderBody()
 
     <div class="col l12 footer" id="footer">
         <div class="row reset-margin">

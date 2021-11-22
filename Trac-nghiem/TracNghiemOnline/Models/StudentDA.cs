@@ -28,7 +28,7 @@ namespace TracNghiemOnline.Models
             List<TestViewModel> tests = (from x in db.tests
                                          join s in db.subjects on x.id_subject equals s.id_subject
                                          join stt in db.statuses on x.id_status equals stt.id_status
-                                         where x.id_status == 1
+                                         where x.id_status == 3
                                          select new TestViewModel { test = x, subject = s, status = stt }).ToList();
             return tests;
         }
@@ -63,14 +63,14 @@ namespace TracNghiemOnline.Models
             List<quests_of_test> qs = (from x in db.quests_of_test
                                        where x.test_code == code
                                        select x).OrderBy(x => Guid.NewGuid()).ToList();
-            foreach(var item in qs)
+            foreach (var item in qs)
             {
                 var StudentTest = new student_test_detail();
                 StudentTest.id_question = item.id_question;
                 StudentTest.test_code = code;
                 StudentTest.id_student = user.ID;
                 question q = db.questions.SingleOrDefault(x => x.id_question == item.id_question);
-                string[] answer = {q.answer_a, q.answer_b, q.answer_c, q.answer_d};
+                string[] answer = { q.answer_a, q.answer_b, q.answer_c, q.answer_d };
                 answer = ShuffleArray.Randomize(answer);
                 StudentTest.answer_a = answer[0];
                 StudentTest.answer_b = answer[1];
@@ -93,12 +93,13 @@ namespace TracNghiemOnline.Models
                         where x.test_code == test_code &&
                         x.id_student == user.ID
                         select new StudentQuestViewModel { test = t, student_test = x, question = q }).OrderBy(x => Guid.NewGuid()).Take(50).ToList(); //OrderBy(x => x.student_test.ID).ToList();
-              
-                 
-                 
 
-            } catch(Exception) { }
-            return   list;
+
+
+
+            }
+            catch (Exception) { }
+            return list;
         }
         public void UpdateTiming(string time)
         {
