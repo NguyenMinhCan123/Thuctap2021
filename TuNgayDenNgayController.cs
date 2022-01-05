@@ -44,8 +44,10 @@ namespace TTQK7.Controllers
                     m_donvi = -1;
                 }
             }
-            var dsBaoCao = db.BaoCaoNgay.Where (x => x.NgayBaoCao == null ? false :x.NgayBaoCao.Value.Year >= obj.TuNgay.Year && x.NgayBaoCao.Value.Month >= obj.TuNgay.Month&& x.NgayBaoCao.Value.Day >= obj.TuNgay.Day
-            && x.NgayBaoCao.Value.Year <=obj.DenNgay.Year && x.NgayBaoCao.Value.Month <= obj.DenNgay.Month&& x.NgayBaoCao.Value.Day <= obj.DenNgay.Day).ToList();
+            var dsBaoCao = db.BaoCaoNgay.Where(x => x.NgayBaoCao == null ? false : obj.TuNgay.Year <= x.NgayBaoCao.Value.Year
+            && obj.DenNgay.Year >= x.NgayBaoCao.Value.Year && obj.TuNgay.Month <= x.NgayBaoCao.Value.Month
+            && obj.DenNgay.Month >= x.NgayBaoCao.Value.Month && obj.TuNgay.Day <= x.NgayBaoCao.Value.Day
+            && obj.DenNgay.Day >= x.NgayBaoCao.Value.Day).ToList();
             if (Request.IsAuthenticated)
             {
 
